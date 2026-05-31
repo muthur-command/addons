@@ -1,7 +1,7 @@
 #!/usr/bin/with-contenv bashio
 # shellcheck shell=bash
 # ==============================================================================
-# Home Assistant Community Add-on: Base Images
+# Muthur Command App: Base Images
 # Displays a simple add-on banner on startup
 # ==============================================================================
 if bashio::supervisor.ping; then
@@ -24,8 +24,8 @@ if bashio::supervisor.ping; then
 
     bashio::log.blue " System: $(bashio::info.operating_system)" \
         " ($(bashio::info.arch) / $(bashio::info.machine))"
-    bashio::log.blue " Home Assistant Core: $(bashio::info.homeassistant)"
-    bashio::log.blue " Home Assistant Supervisor: $(bashio::info.supervisor)"
+    bashio::log.blue " Muthur Command Core: $(bashio::info 'supervisor.info.muthurcommand' '.muthurcommand')"
+    bashio::log.blue " Supervisor: $(bashio::info.supervisor)"
 
     bashio::log.blue \
         '-----------------------------------------------------------'

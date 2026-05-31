@@ -23,7 +23,7 @@ configuration:
     description: >-
       BlueZ Bluetooth Adapter Controller ID used by the Matter Server. This is
       required if local commissioning via Bluetooth is used. Note: Using the
-      Home Assistant Companion app commissioning method is recommended as it is
+      Muthur Command Companion app commissioning method is recommended as it is
       better tested and allows to commission directly in proximity of the
       device itself.
   matter_server_env_vars:

@@ -1,7 +1,7 @@
 #!/bin/bash
 set -eE
 
-SUPERVISOR_VERSON="$(curl -s https://version.home-assistant.io/dev.json | jq -e -r '.supervisor')"
+SUPERVISOR_VERSON="$(curl -s https://version.muthur-command.com/dev.json | jq -e -r '.supervisor')"
 DOCKER_TIMEOUT=30
 DOCKER_PID=0
 
@@ -78,7 +78,7 @@ function cleanup_docker() {
 function run_supervisor() {
     mkdir -p /tmp/supervisor_data
     docker run --rm --privileged \
-        --name hassio_supervisor \
+        --name mcos_supervisor \
         --privileged \
         --security-opt seccomp=unconfined \
         --security-opt apparmor=unconfined \
@@ -89,10 +89,10 @@ function run_supervisor() {
         -v "$WORKSPACE_DIRECTORY":/data/addons/local:rw \
         -v /etc/machine-id:/etc/machine-id:ro \
         -e SUPERVISOR_SHARE="/tmp/supervisor_data" \
-        -e SUPERVISOR_NAME=hassio_supervisor \
+        -e SUPERVISOR_NAME=mcos_supervisor \
         -e SUPERVISOR_DEV=1 \
         -e SUPERVISOR_MACHINE="qemux86-64" \
-        "homeassistant/amd64-hassio-supervisor:${SUPERVISOR_VERSON}"
+        "ghcr.io/muthur-command/amd64-mcos-supervisor:${SUPERVISOR_VERSON}"
 }
 
 function init_dbus() {

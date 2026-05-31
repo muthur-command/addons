@@ -14,12 +14,12 @@ map:
   - share:rw
 backup_exclude:
   - "*/models/*"
-homeassistant_api: true
+muthurcommand_api: true
 options:
   debug_logging: false
 schema:
   debug_logging: bool
 ports:
   "10300/tcp": null
-homeassistant: 2023.11.0
-image: homeassistant/{arch}-addon-speech-to-phrase
+muthurcommand: 2023.11.0
+image: muthur-command/{arch}-addon-speech-to-phrase

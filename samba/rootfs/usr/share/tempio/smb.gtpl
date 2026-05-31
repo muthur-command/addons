@@ -1,7 +1,7 @@
 [global]
    netbios name = {{ env "HOSTNAME" }}
    workgroup = {{ .workgroup }}
-   server string = Samba Home Assistant
+   server string = Samba Muthur Command
    local master = {{ .local_master | ternary "yes" "no" }}
 
    security = user
@@ -38,7 +38,7 @@
 [config]
    browseable = yes
    writeable = yes
-   path = /homeassistant
+   path = /muthurcommand
 
    valid users = {{ .username }}
    force user = root

@@ -16,7 +16,7 @@ done
 
 bashio::log.info "PulseAudio socket available, starting VLC"
 
-# Send out discovery information to Home Assistant
+# Send out discovery information to Muthur Command
 /etc/s6-overlay/scripts/vlc-discovery &
 
 # Run daemon

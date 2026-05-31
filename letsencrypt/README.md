@@ -1,4 +1,4 @@
-# Home Assistant App: Letsencrypt
+# Muthur Command App: Letsencrypt
 
 Let's Encrypt is a certificate authority that provides free X.509 certificates for Transport Layer Security encryption via an automated process designed to eliminate the hitherto complex process of manual creation, validation, signing, installation, and renewal of certificates for secure websites.
 

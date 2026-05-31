@@ -3,7 +3,7 @@ version: 2.1.0
 slug: openwakeword
 name: openWakeWord
 description: openWakeWord using the Wyoming protocol
-url: https://github.com/home-assistant/addons/blob/master/openwakeword
+url: https://github.com/muthur-command/addons/blob/mc/openwakeword
 arch:
   - amd64
   - aarch64
@@ -24,5 +24,5 @@ schema:
   debug_logging: bool
 ports:
   "10400/tcp": null
-homeassistant: 2023.9.0.dev20230809
-image: homeassistant/{arch}-addon-openwakeword
+muthurcommand: 2023.9.0.dev20230809
+image: muthur-command/{arch}-addon-openwakeword

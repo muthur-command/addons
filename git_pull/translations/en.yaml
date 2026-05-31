@@ -15,7 +15,7 @@ configuration:
   auto_restart:
     name: Auto restart
     description: >-
-      Restart Home Assistant when the configuration has changed (and is valid).
+      Restart Muthur Command when the configuration has changed (and is valid).
   restart_ignore:
     name: Restart Ignore
     description: >-

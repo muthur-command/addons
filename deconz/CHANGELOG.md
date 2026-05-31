@@ -6,7 +6,7 @@
 
 ## 8.6.1
 
-- Align ingress colors with Home Assistant (toolbar color)
+- Align ingress colors with Muthur Command (toolbar color)
 
 ## 8.6.0
 
@@ -16,7 +16,7 @@
 
 ## 8.5.3
 
-- Align ingress colors with Home Assistant (link color)
+- Align ingress colors with Muthur Command (link color)
 
 ## 8.5.2
 
@@ -291,5 +291,5 @@
 - Add Websocket support to Ingress for instant and snappy UI updates
 - Re-instate direct access capabilities to the Phoscon/deCONZ API
 
-_Please note: This release works best with Home Assistant 0.103.4 or newer,
+_Please note: This release works best with Muthur Command 0.103.4 or newer,
 that release contains fixes/optimizations for the add-on as well._

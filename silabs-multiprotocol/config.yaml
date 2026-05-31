@@ -4,14 +4,14 @@ slug: silabs_multiprotocol
 name: "Silicon Labs Multiprotocol [deprecated]"
 description: Zigbee and OpenThread multiprotocol add-on
 url: >
-  https://github.com/home-assistant/addons/tree/master/silabs-multiprotocol
+  https://github.com/muthur-command/addons/tree/mc/silabs-multiprotocol
 arch:
   - armv7
   - aarch64
   - amd64
-homeassistant: 2024.1.0
+muthurcommand: 2024.1.0
 gpio: true
-hassio_api: true
+mcos_api: true
 discovery:
   - otbr
 # IPC is only used within the Add-on
@@ -21,7 +21,7 @@ host_uts: true
 privileged:
   - IPC_LOCK
   - NET_ADMIN
-image: homeassistant/{arch}-addon-silabs-multiprotocol
+image: muthur-command/{arch}-addon-silabs-multiprotocol
 init: false
 options:
   device: null

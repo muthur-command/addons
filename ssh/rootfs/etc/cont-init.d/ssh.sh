@@ -14,7 +14,7 @@ chmod 700 /data/.ssh \
     || bashio::exit.nok \
         'Failed setting permissions on persistent .ssh folder'
 
-# Make Home Assistant TOKEN available for non-interactive SSH commands
+# Make Muthur Command TOKEN available for non-interactive SSH commands
 bashio::var.json \
     supervisor_token "${SUPERVISOR_TOKEN}" \
     | tempio \

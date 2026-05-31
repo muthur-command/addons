@@ -1,30 +1,30 @@
-# Home Assistant App: Whisper
+# Muthur Command App: Whisper
 
 ## Installation
 
 Follow these steps to get the app installed on your system:
 
-1. In Home Assistant, go to **Settings** > **Apps** > **Install app**.
+1. In Muthur Command, go to **Settings** > **Apps** > **Install app**.
 2. Find the "Whisper" app and click it.
 3. Click on the "INSTALL" button.
 
 ## How to use
 
 After this app is installed and running, it will be automatically discovered
-by the Wyoming integration in Home Assistant. To finish the setup,
+by the Wyoming integration in Muthur Command. To finish the setup,
 click the following my button:
 
-[![Open your Home Assistant instance and start setting up a new integration.](https://my.home-assistant.io/badges/config_flow_start.svg)](https://my.home-assistant.io/redirect/config_flow_start/?domain=wyoming)
+Open **Settings → Devices & Services → Add integration** and search for the Wyoming integration.](https://www.muthur-command.com/redirect/config_flow_start/?domain=wyoming)
 
 Alternatively, you can install the Wyoming integration manually, see the
-[Wyoming integration documentation](https://www.home-assistant.io/integrations/wyoming/)
+[Wyoming integration documentation](https://www.muthur-command.com/integrations/wyoming/)
 for more information.
 
 ## Configuration
 
 ### Option: `language`
 
-Default language for the app. In Home Assist 2023.8+, multiple languages can be used simultaneously by different [Assist pipelines](https://www.home-assistant.io/voice_control/voice_remote_local_assistant/).
+Default language for the app. In Muthur Command 2023.8+, multiple languages can be used simultaneously by different [Assist pipelines](https://www.muthur-command.com/voice_control/voice_remote_local_assistant/).
 
 If you select "auto", the model will run **much** slower but will auto-detect the spoken language.
 
@@ -73,7 +73,7 @@ If `custom_model_type` is set to `transformers`, a HuggingFace transformers Whis
 To use a local custom Whisper model, first create a `models` subdirectory in the app's configuration directory if it does not already exist. Then copy your model directory into:
 `/addon_configs/core_whisper/models/<your-model-dir>`.
 Then, set the `custom_model` path to:
-`/config/models/<your-model-dir>`. For a local model, the path must start with `/config/models/`, as this is how the add-on accesses your Home Assistant configuration directory through the container's mounted volume.
+`/config/models/<your-model-dir>`. For a local model, the path must start with `/config/models/`, as this is how the add-on accesses your Muthur Command configuration directory through the container's mounted volume.
 
 ### Option: `custom_model_type`
 
@@ -118,14 +118,14 @@ Got questions?
 
 You have several options to get them answered:
 
-- The [Home Assistant Discord Chat Server][discord].
-- The Home Assistant [Community Forum][forum].
-- Join the [Reddit subreddit][reddit] in [/r/homeassistant][reddit]
+- The [Muthur Command Discord Chat Server][discord].
+- The Muthur Command [Community Forum][forum].
+- Join the [Reddit subreddit][reddit] in [/r/muthurcommand][reddit]
 
 In case you've found an bug, please [open an issue on our GitHub][issue].
 
-[discord]: https://www.home-assistant.io/join-chat
-[forum]: https://community.home-assistant.io
-[issue]: https://github.com/home-assistant/addons/issues
-[reddit]: https://reddit.com/r/homeassistant
-[repository]: https://github.com/hassio-addons/repository
+[discord]: https://www.muthur-command.com
+[forum]: https://community.muthur-command.com
+[issue]: https://github.com/muthur-command/addons/issues
+[reddit]: https://reddit.com/r/muthurcommand
+[repository]: https://github.com/mcos-addons/repository

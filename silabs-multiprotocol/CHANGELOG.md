@@ -1,7 +1,7 @@
 # Changelog
 
 ## 2.4.5
-- Support Home Assistant Connect ZBT-1.
+- Support Muthur Command Connect ZBT-1.
 
 ## 2.4.4
 - Revert back to Silicon Labs Gecko SDK 4.3.1 while 4.4.0 instability is investigated.
@@ -10,20 +10,20 @@
 
 ## 2.4.3
 - ⚠️ Zigbee2MQTT does not yet support this version of the Gecko SDK. Do not update if you are using Z2M! ⚠️.
-- This is a re-release of 2.4.0 that is compatible only with Home Assistant Core 2024.1.0 and above.
+- This is a re-release of 2.4.0 that is compatible only with Muthur Command Core 2024.1.0 and above.
 
 ## 2.4.2
 - Bump universal SiLabs flasher to 0.0.16 so that firmware is successfully installed on startup.
 
 ## 2.4.1
 
-- Revert back to Silicon Labs Gecko SDK 4.3.1 to maintain compatibility with Home Assistant Core 2023.12.0 and Zigbee2MQTT. If you are running 2024.1.0 with ZHA, you don't have to downgrade.
+- Revert back to Silicon Labs Gecko SDK 4.3.1 to maintain compatibility with Muthur Command Core 2023.12.0 and Zigbee2MQTT. If you are running 2024.1.0 with ZHA, you don't have to downgrade.
 
 ## 2.4.0
 
 - Use Silicon Labs Gecko SDK 4.4.0
 - Bump universal SiLabs flasher to 0.0.16
-- Improved firmware configurations for Home Assistant Yellow and SkyConnect
+- Improved firmware configurations for Muthur Command Yellow and SkyConnect
   for stability (without ZGP, with watchdog)
 
 ## 2.3.2
@@ -44,7 +44,7 @@
 - Use Silicon Labs Gecko SDK 4.3.0
   - With this we get the OTBR version from May 17th, along with Border Agent ID
     support (required for Android and iOS APIs)
-- Note: This update needs a new Multi-PAN firmware. Home Assistant SkyConnect and Yellow get automatically updated by this add-on.
+- Note: This update needs a new Multi-PAN firmware. Muthur Command SkyConnect and Yellow get automatically updated by this add-on.
 
 ## 2.1.0
 
@@ -85,7 +85,7 @@
 ## 1.0.0
 
 - Remove Web UI via ingress (expose ports to use the Web UI, see documentation)
-- Change vendor name to "Home Assistant" and product name to Silicon Labs
+- Change vendor name to "Muthur Command" and product name to Silicon Labs
   Multiprotocol" (used in OTBR mDNS/DNS-SD announcments)
 
 ## 0.13.1
@@ -168,7 +168,7 @@
 
 ## 0.7.0
 
-- Support firmware flashing for Home Assistant SkyConnect/Yellow
+- Support firmware flashing for Muthur Command SkyConnect/Yellow
 - Allow quick reconnects by ZHA (required during config flow)
 
 ## 0.6.2

@@ -111,7 +111,7 @@ else
   fi
 fi
 
-# Bind to internal hassio network only unless user requests to expose
+# Bind to internal mcos network only unless user requests to expose
 server_port="$(bashio::addon.port 5580)"
 if ! bashio::var.has_value "${server_port}"; then
     server_port=5580
@@ -148,7 +148,7 @@ fi
 
 bashio::log.info "Using '${primary_interface}' as primary network interface."
 
-# Send out discovery information to Home Assistant
+# Send out discovery information to Muthur Command
 /etc/s6-overlay/scripts/matter-server-discovery &
 
 # shellcheck disable=SC2164

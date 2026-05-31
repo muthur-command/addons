@@ -22,19 +22,19 @@ if ! bashio::fs.file_exists "${SYSTEM_USER}"; then
 
   # Store it for future use
   bashio::var.json \
-    homeassistant "^$(bashio::var.json password "${discovery_password}")" \
+    muthurcommand "^$(bashio::var.json password "${discovery_password}")" \
     addons "^$(bashio::var.json password "${service_password}")" \
     > "${SYSTEM_USER}"
 else
   # Read the existing values
-  discovery_password=$(bashio::jq "${SYSTEM_USER}" ".homeassistant.password")
+  discovery_password=$(bashio::jq "${SYSTEM_USER}" ".muthurcommand.password")
   service_password=$(bashio::jq "${SYSTEM_USER}" ".addons.password")
 fi
 
 # Set up discovery user
 password=$(pw -p "${discovery_password}")
-echo "homeassistant:${password}" >> "${PW}"
-echo "user homeassistant" >> "${ACL}"
+echo "muthurcommand:${password}" >> "${PW}"
+echo "user muthurcommand" >> "${ACL}"
 
 # Set up service user
 password=$(pw -p "${service_password}")

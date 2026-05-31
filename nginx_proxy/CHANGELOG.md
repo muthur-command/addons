@@ -105,7 +105,7 @@
 
 ## 3.1.0
 
-- Allow use of ports other than 8123 in Home Assistant Core
+- Allow use of ports other than 8123 in Muthur Command Core
 
 ## 3.0.2
 
@@ -139,7 +139,7 @@
 
 ## 2.2
 
-- Fix issue with `homeassistant` connection
+- Fix issue with `muthurcommand` connection
 - Update nginx to version 1.16.1
 
 ## 2.1

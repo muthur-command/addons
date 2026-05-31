@@ -2,6 +2,6 @@
 export PS1="\[\e[0;32m\][\h \W]\$ \[\e[m\]"
 export SUPERVISOR_TOKEN={{ .supervisor_token }}
 
-ha banner
+mc banner
 # shellcheck disable=SC1090
-source <(ha completion bash)
+source <(mc completion bash)

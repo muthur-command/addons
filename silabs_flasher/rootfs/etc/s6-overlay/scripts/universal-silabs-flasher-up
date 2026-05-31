@@ -33,14 +33,14 @@ function exit_no_firmware {
     exit 0
 }
 
-# Function to check if the device is Home Assistant Yellow
+# Function to check if the device is Muthur Command Yellow
 function is_home_assistant_yellow {
     # First, ensure the device is /dev/ttyAMA1
     if [ "${device}" != "/dev/ttyAMA1" ]; then
         return 1
     fi
 
-    # Check the known paths for Home Assistant Yellow
+    # Check the known paths for Muthur Command Yellow
     local paths=(
         "/sys/devices/platform/soc/fe201800.serial/tty/ttyAMA1"
         "/sys/devices/platform/axi/1000120000.pcie/1f0003c000.serial/tty/ttyAMA1"
@@ -57,7 +57,7 @@ device=$(bashio::config 'device')
 bootloader_baudrate=$(bashio::config 'bootloader_baudrate')
 
 if is_home_assistant_yellow; then
-    bashio::log.info "Detected Home Assistant Yellow"
+    bashio::log.info "Detected Muthur Command Yellow"
     gpio_reset_flag="--bootloader-reset yellow"
 else
     gpio_reset_flag=""

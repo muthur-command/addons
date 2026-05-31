@@ -1,5 +1,5 @@
 {{/*
-    Options saved in the Home Assistant UI are available in .options
+    Options saved in the Muthur Command UI are available in .options
     Some variables are available in .variables, these are added in nginx/run
 */}}
 daemon off;
@@ -110,9 +110,9 @@ http {
 
         location / {
             {{- if .options.use_ssl_backend }}
-            proxy_pass https://homeassistant.local.hass.io:{{ .variables.port }};
+            proxy_pass https://muthurcommand.local.mcos:{{ .variables.port }};
             {{- else }}
-            proxy_pass http://homeassistant.local.hass.io:{{ .variables.port }};
+            proxy_pass http://muthurcommand.local.mcos:{{ .variables.port }};
             {{- end }}
             proxy_set_header Origin $http_origin;
             proxy_set_header X-Forwarded-Proto $scheme;

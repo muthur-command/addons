@@ -1,17 +1,17 @@
-# Home Assistant App: Samba share
+# Muthur Command App: Samba share
 
 ## Installation
 
 Follow these steps to get the app (formerly known as add-on) installed on your system:
 
-1. In Home Assistant, go to **Settings** > **Apps** > **Install app**.
+1. In Muthur Command, go to **Settings** > **Apps** > **Install app**.
 2. Find the "Samba share" app and click it.
 3. Click on the "INSTALL" button.
 
 ## How to use
 
 1. In the configuration section, set a username and password.
-   You can specify any username and password; these are not related in any way to the login credentials you use to log in to Home Assistant or to log in to the computer with which you will use Samba share.
+   You can specify any username and password; these are not related in any way to the login credentials you use to log in to Muthur Command or to log in to the computer with which you will use Samba share.
 2. Review the enabled shares. Disable any you do not plan to use. Shares can be re-enabled later if needed.
 
 ## Connection
@@ -25,9 +25,9 @@ Directory | Description
 `addons` | This is for your local apps.
 `addon_configs` | This is for the configuration files of your apps.
 `backup` | This is for your backups.
-`config` | This is for your Home Assistant configuration.
+`config` | This is for your Muthur Command configuration.
 `media` | This is for local media files.
-`share` | This is for your data that is shared between apps and Home Assistant.
+`share` | This is for your data that is shared between apps and Muthur Command.
 `ssl` | This is for your SSL certificates.
 
 ## Configuration
@@ -37,7 +37,7 @@ App configuration:
 ```yaml
 workgroup: WORKGROUP
 local_master: true
-username: homeassistant
+username: muthurcommand
 password: YOUR_PASSWORD
 enabled_shares:
   - addons
@@ -120,14 +120,14 @@ Got questions?
 
 You have several options to get them answered:
 
-- The [Home Assistant Discord Chat Server][discord].
-- The Home Assistant [Community Forum][forum].
-- Join the [Reddit subreddit][reddit] in [/r/homeassistant][reddit]
+- The [Muthur Command Discord Chat Server][discord].
+- The Muthur Command [Community Forum][forum].
+- Join the [Reddit subreddit][reddit] in [/r/muthurcommand][reddit]
 
 In case you've found a bug, please [open an issue on our GitHub][issue].
 
-[discord]: https://www.home-assistant.io/join-chat
-[forum]: https://community.home-assistant.io
-[issue]: https://github.com/home-assistant/addons/issues
-[reddit]: https://reddit.com/r/homeassistant
-[repository]: https://github.com/hassio-addons/repository
+[discord]: https://www.muthur-command.com
+[forum]: https://community.muthur-command.com
+[issue]: https://github.com/muthur-command/addons/issues
+[reddit]: https://reddit.com/r/muthurcommand
+[repository]: https://github.com/mcos-addons/repository

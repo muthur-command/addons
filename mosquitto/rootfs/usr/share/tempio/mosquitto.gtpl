@@ -15,7 +15,7 @@ persistence_location /data/
 
 # Limits
 # max_queued_messages is effectively the upper limit of
-# the number of entities on Home Assistant if startup
+# the number of entities on Muthur Command if startup
 # is busy and cannot read messages fast enough
 max_queued_messages 8192
 

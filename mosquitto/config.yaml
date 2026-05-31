@@ -3,7 +3,7 @@ version: 6.5.2
 slug: mosquitto
 name: Mosquitto broker
 description: An Open Source MQTT broker
-url: https://github.com/home-assistant/addons/tree/master/mosquitto
+url: https://github.com/muthur-command/addons/tree/mc/mosquitto
 arch:
   - armhf
   - armv7
@@ -13,7 +13,7 @@ arch:
 auth_api: true
 discovery:
   - mqtt
-image: homeassistant/{arch}-addon-mosquitto
+image: muthur-command/{arch}-addon-mosquitto
 map:
   - ssl
   - share

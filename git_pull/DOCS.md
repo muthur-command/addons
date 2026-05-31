@@ -1,17 +1,17 @@
-# Home Assistant App: Git pull
+# Muthur Command App: Git pull
 
 ## Installation
 
 Follow these steps to get the app (formerly known as add-on) installed on your system:
 
-1. In Home Assistant, go to **Settings** > **Apps** > **Install app**.
+1. In Muthur Command, go to **Settings** > **Apps** > **Install app**.
 2. Find the "Git pull" app and click it.
 3. Click on the "INSTALL" button.
 
 ## WARNING
 
 The risk of complete loss is possible. Prior to starting this app, ensure a copy
-of your Home Assistant configuration files exists in the Github repository. Otherwise, 
+of your Muthur Command configuration files exists in the Github repository. Otherwise, 
 your local machine configuration folder will be overwritten with an empty configuration 
 folder and you will need to restore from a backup.
 
@@ -95,7 +95,7 @@ Git URL to your repository (make sure to use double quotes).
 
 ### Option: `auto_restart` (required)
 
-`true`/`false`: Restart Home Assistant when the configuration has changed (and is valid).
+`true`/`false`: Restart Muthur Command when the configuration has changed (and is valid).
 
 ### Option: `restart_ignore` (optional)
 
@@ -142,14 +142,14 @@ Got questions?
 
 You have several options to get them answered:
 
-- The [Home Assistant Discord Chat Server][discord].
-- The Home Assistant [Community Forum][forum].
-- Join the [Reddit subreddit][reddit] in [/r/homeassistant][reddit]
+- The [Muthur Command Discord Chat Server][discord].
+- The Muthur Command [Community Forum][forum].
+- Join the [Reddit subreddit][reddit] in [/r/muthurcommand][reddit]
 
 In case you've found a bug, please [open an issue on our GitHub][issue].
 
-[discord]: https://www.home-assistant.io/join-chat
-[forum]: https://community.home-assistant.io
-[issue]: https://github.com/home-assistant/addons/issues
-[reddit]: https://reddit.com/r/homeassistant
-[repository]: https://github.com/hassio-addons/repository
+[discord]: https://www.muthur-command.com
+[forum]: https://community.muthur-command.com
+[issue]: https://github.com/muthur-command/addons/issues
+[reddit]: https://reddit.com/r/muthurcommand
+[repository]: https://github.com/mcos-addons/repository

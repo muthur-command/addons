@@ -18,7 +18,7 @@ configuration:
   autoflash_firmware:
     name: Automatically flash firmware
     description: >-
-      Automatically flash Multi-PAN firmware on Home Assistant SkyConnect
+      Automatically flash Multi-PAN firmware on Muthur Command SkyConnect
       (WARNING: flashing the original EmberZNet is a manual process currently)
   cpcd_trace:
     name: Co-Processor Communication tracing

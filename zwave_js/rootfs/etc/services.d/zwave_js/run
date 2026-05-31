@@ -30,7 +30,7 @@ fi
 
 bashio::log.info "Using ${CONNECTION_TYPE}: ${SERIAL_DEVICE}"
 
-# Send out discovery information to Home Assistant
+# Send out discovery information to Muthur Command
 ./discovery &
 
 # Where Z-Wave JS should extract the config files to

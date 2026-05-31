@@ -3,7 +3,7 @@ version: 0.3.1
 slug: vlc
 name: VLC
 description: Turn your device into a Media Player with VLC
-url: https://github.com/home-assistant/addons/tree/master/vlc
+url: https://github.com/muthur-command/addons/tree/mc/vlc
 arch:
   - amd64
   - i386
@@ -12,8 +12,8 @@ arch:
 audio: true
 discovery:
   - vlc_telnet
-homeassistant: 2021.3.0.dev20210216
-image: homeassistant/{arch}-addon-vlc
+muthurcommand: 2021.3.0.dev20210216
+image: muthur-command/{arch}-addon-vlc
 ingress: true
 init: false
 map:

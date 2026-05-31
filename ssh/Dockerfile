@@ -26,13 +26,13 @@ RUN sed -i 's/^#[[:space:]]*\(include "\/usr\/share\/nano\/\*\.nanorc".*\)/\1/' 
 # Use bash as default shell
 RUN sed -i "s|/bin/sh|/bin/bash|" /etc/passwd
 
-# Home Assistant CLI
+# Muthur Command CLI
 ARG BUILD_ARCH
 ARG CLI_VERSION
-RUN curl -Lso /usr/bin/ha \
-        "https://github.com/home-assistant/cli/releases/download/${CLI_VERSION}/ha_${BUILD_ARCH}" \
-    && chmod a+x /usr/bin/ha \
-    && /usr/bin/ha completion > /usr/share/bash-completion/completions/ha
+RUN curl -Lso /usr/bin/mc \
+        "https://github.com/muthur-command/cli/releases/download/${CLI_VERSION}/mc_${BUILD_ARCH}" \
+    && chmod a+x /usr/bin/mc \
+    && /usr/bin/mc completion > /usr/share/bash-completion/completions/mc
 
 # Copy data
 COPY rootfs /

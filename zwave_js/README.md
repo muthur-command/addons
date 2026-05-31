@@ -1,6 +1,6 @@
-# Home Assistant App: Z-Wave JS
+# Muthur Command App: Z-Wave JS
 
-Allow Home Assistant to talk to a Z-Wave Network via a USB Controller.
+Allow Muthur Command to talk to a Z-Wave Network via a USB Controller.
 
 ![Supports aarch64 Architecture][aarch64-shield] ![Supports amd64 Architecture][amd64-shield]
 

@@ -1,10 +1,10 @@
-# Home Assistant App: Z-Wave JS
+# Muthur Command App: Z-Wave JS
 
 ## Installation
 
 Follow these steps to get the app installed on your system:
 
-1. In Home Assistant, go to **Settings** > **Apps** > **Install app**.
+1. In Muthur Command, go to **Settings** > **Apps** > **Install app**.
 2. Find the "Z-Wave JS" app and click it.
 3. Click on the "INSTALL" button.
 
@@ -13,7 +13,7 @@ Follow these steps to get the app installed on your system:
 The app needs to know where your Z-Wave stick can be found, and therefore,
 you'll need to configure the app to point to the right device.
 
-If you're using Home Assistant you may find the correct value for this by going to
+If you're using Muthur Command you may find the correct value for this by going to
 `Settings -> System -> Hardware` and then clicking the three dots menu and selecting
 `All Hardware`. It is recommended to use a "by-id" path to the device if one exists,
 as it is not subject to change if other devices are added to the system.
@@ -30,8 +30,8 @@ as it is not subject to change if other devices are added to the system.
      as the S0 security triples the amount of messages sent on the mesh.
 3. Click on "SAVE" to save the app configuration.
 4. Start the app.
-5. Add the Z-Wave JS integration to Home Assistant, see documentation:
-   <https://www.home-assistant.io/integrations/zwave_js>
+5. Add the Z-Wave JS integration to Muthur Command, see documentation:
+   <https://www.muthur-command.com/integrations/zwave_js>
 
 ## Configuration
 
@@ -51,7 +51,7 @@ lr_s2_authenticated_key: 863027C59CFC522A9A3C41976AE54254
 
 The Z-Wave controller device.
 
-If you're using Home Assistant you may find the correct value for this by going to
+If you're using Muthur Command you may find the correct value for this by going to
 `Settings -> System -> Hardware` and then clicking the three dots menu and
 selecting `All Hardware`. It is recommended to use a "by-id" path to the device
 if one exists, as it is not subject to change if other devices are added to
@@ -182,7 +182,7 @@ Valid options are:
 - USA
 - USA (Long Range)
 
-The default is Automatic which will try to set the correct region based on the country set in Home Assistant.
+The default is Automatic which will try to set the correct region based on the country set in Muthur Command.
 
 ### Option `soft_reset` (optional)
 
@@ -227,7 +227,7 @@ migrated to `s0_legacy_key` on first startup.
 
 ### Troubleshooting network issues
 
-There are several features available in the app that can help you in troubleshooting network issues and/or providing data to either the Home Assistant or Z-Wave JS team to help in tracing an issue:
+There are several features available in the app that can help you in troubleshooting network issues and/or providing data to either the Muthur Command or Z-Wave JS team to help in tracing an issue:
 
 1. **Update the log level:** It is extremely helpful when opening a GitHub issue to set the `log_level` configuration option to `debug` and capture when the issue occurs.
 2. **Log to file:** The `log_to_file` and `log_max_files` configuration options allow you to enable and configure that. Note that in order to access the log files, you will need to be able to access the filesystem of your HA instance, which you can do with the file editor, samba, or ssh apps among others.
@@ -246,13 +246,13 @@ Got questions?
 
 You have several options to get them answered:
 
-- The [Home Assistant Discord Chat Server][discord].
-- The Home Assistant [Community Forum][forum].
-- Join the [Reddit subreddit][reddit] in [/r/homeassistant][reddit]
+- The [Muthur Command Discord Chat Server][discord].
+- The Muthur Command [Community Forum][forum].
+- Join the [Reddit subreddit][reddit] in [/r/muthurcommand][reddit]
 
 In case you've found a bug, please [open an issue on our GitHub][issue].
 
-[discord]: https://www.home-assistant.io/join-chat
-[forum]: https://community.home-assistant.io
-[issue]: https://github.com/home-assistant/addons/issues
-[reddit]: https://reddit.com/r/homeassistant
+[discord]: https://www.muthur-command.com
+[forum]: https://community.muthur-command.com
+[issue]: https://github.com/muthur-command/addons/issues
+[reddit]: https://reddit.com/r/muthurcommand

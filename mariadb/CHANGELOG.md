@@ -2,13 +2,13 @@
 
 ## 2.7.2
 
-- Add option to configure MariaDB server parameters (see also [home-assistant/addons#3754](https://github.com/home-assistant/addons/issues/3754))
+- Add option to configure MariaDB server parameters (see also [muthur-command/addons#3754](https://github.com/muthur-command/addons/issues/3754))
 
 ## 2.7.1
 
 **Note:** Restart the add-on before upgrade if the current version is lower
 than 2.7.0! This is to ensure a clean stop right before the update (see also
-https://github.com/home-assistant/addons/issues/3566).
+https://github.com/muthur-command/addons/issues/3566).
 
 - Increase MariaDB add-on shutdown timeout to 300s
 
@@ -80,7 +80,7 @@ https://github.com/home-assistant/addons/issues/3566).
 - Close port 3306 by default
 - Ensure a proper collation set is used
 - Adds database upgrade process during startup
-- Change default configuration username from "hass" to "homeassistant"
+- Change default configuration username from "hass" to "muthurcommand"
 
 ## 1.3.0
 

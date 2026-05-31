@@ -2,20 +2,20 @@
 version: 6.0.0
 slug: configurator
 name: File editor
-description: Simple browser-based file editor for Home Assistant
-url: https://github.com/home-assistant/addons/tree/master/configurator
+description: Simple browser-based file editor for Muthur Command
+url: https://github.com/muthur-command/addons/tree/mc/configurator
 arch:
   - aarch64
   - amd64
-homeassistant: 0.91.1
-homeassistant_api: true
-image: homeassistant/{arch}-addon-configurator
+muthurcommand: 0.91.1
+muthurcommand_api: true
+image: muthur-command/{arch}-addon-configurator
 ingress: true
 init: false
 map:
   - all_addon_configs:rw
   - backup:rw
-  - homeassistant_config:rw
+  - config:rw
   - media:rw
   - share:rw
   - ssl:rw

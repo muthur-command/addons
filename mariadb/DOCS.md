@@ -1,10 +1,10 @@
-# Home Assistant App: MariaDB
+# Muthur Command App: MariaDB
 
 ## Installation
 
 Follow these steps to get the app (formerly known as add-on) installed on your system:
 
-1. In Home Assistant, go to **Settings** > **Apps** > **Install app**.
+1. In Muthur Command, go to **Settings** > **Apps** > **Install app**.
 2. Find the "MariaDB" app and click it.
 3. Click on the "INSTALL" button.
 
@@ -13,7 +13,7 @@ Follow these steps to get the app (formerly known as add-on) installed on your s
 1. Set the `logins` -> `password` field to something strong and unique.
 2. Start the app.
 3. Check the app log output to see the result.
-4. Add the `recorder` integration to your Home Assistant configuration.
+4. Add the `recorder` integration to your Muthur Command configuration.
 
 ## App configuration
 
@@ -24,24 +24,24 @@ Example app configuration:
 
 ```yaml
 databases:
-  - homeassistant
+  - muthurcommand
 logins:
-  - username: homeassistant
+  - username: muthurcommand
     password: PASSWORD
   - username: read_only_user
     password: PASSWORD
 rights:
-  - username: homeassistant
-    database: homeassistant
+  - username: muthurcommand
+    database: muthurcommand
   - username: read_only_user
-    database: homeassistant
+    database: muthurcommand
     privileges:
       - SELECT
 ```
 
 ### Option: `databases` (required)
 
-Database name, e.g., `homeassistant`. Multiple are allowed.
+Database name, e.g., `muthurcommand`. Multiple are allowed.
 
 ### Option: `logins` (required)
 
@@ -49,7 +49,7 @@ This section defines a create user definition in MariaDB. [Create User][createus
 
 ### Option: `logins.username` (required)
 
-Database user login, e.g., `homeassistant`. [User Name][username] documentation.
+Database user login, e.g., `muthurcommand`. [User Name][username] documentation.
 
 ### Option: `logins.password` (required)
 
@@ -71,25 +71,25 @@ This should be the same database defined in `databases`.
 
 A list of privileges to grant to this user from [grant][grant] like `SELECT` and `CREATE`.
 If omitted, grants `ALL PRIVILEGES` to the user. Restricting privileges of the user
-that Home Assistant uses is not recommended but if you want to allow other applications
+that Muthur Command uses is not recommended but if you want to allow other applications
 to view recorder data should create a user limited to read-only access on the database.
 
 ### Option: `mariadb_server_args` (optional)
 
-Some users have experienced [errors][migration-issues] during Home Assistant schema updates on large databases.
+Some users have experienced [errors][migration-issues] during Muthur Command schema updates on large databases.
 Defining the recommended parameters can help if there is RAM available.
 
 Example: `--innodb_buffer_pool_size=512M`
 
-## Home Assistant Configuration
+## Muthur Command Configuration
 
-MariaDB will be used by the `recorder` and `history` components within Home Assistant. For more information about setting this up, see the [recorder integration][mariadb-ha-recorder] documentation for Home Assistant.
+MariaDB will be used by the `recorder` and `history` components within Muthur Command. For more information about setting this up, see the [recorder integration][mariadb-ha-recorder] documentation for Muthur Command.
 
-Example Home Assistant configuration:
+Example Muthur Command configuration:
 
 ```yaml
 recorder:
-  db_url: mysql://homeassistant:password@core-mariadb/homeassistant?charset=utf8mb4
+  db_url: mysql://muthurcommand:password@core-mariadb/muthurcommand?charset=utf8mb4
 ```
 
 ## Support
@@ -98,9 +98,9 @@ Got questions?
 
 You have several options to get them answered:
 
-- The [Home Assistant Discord Chat Server][discord].
-- The Home Assistant [Community Forum][forum].
-- Join the [Reddit subreddit][reddit] in [/r/homeassistant][reddit]
+- The [Muthur Command Discord Chat Server][discord].
+- The Muthur Command [Community Forum][forum].
+- Join the [Reddit subreddit][reddit] in [/r/muthurcommand][reddit]
 
 In case you've found a bug, please [open an issue on our GitHub][issue].
 
@@ -108,11 +108,11 @@ In case you've found a bug, please [open an issue on our GitHub][issue].
 [username]: https://mariadb.com/kb/en/create-user/#user-name-component
 [hostname]: https://mariadb.com/kb/en/create-user/#host-name-component
 [grant]: https://mariadb.com/kb/en/grant/
-[migration-issues]: https://github.com/home-assistant/core/issues/125339
-[mariadb-ha-recorder]: https://www.home-assistant.io/integrations/recorder/
-[discord]: https://www.home-assistant.io/join-chat
-[forum]: https://community.home-assistant.io
+[migration-issues]: https://github.com/muthur-command/core/issues/125339
+[mariadb-ha-recorder]: https://www.muthur-command.com/integrations/recorder/
+[discord]: https://www.muthur-command.com
+[forum]: https://community.muthur-command.com
 [i386-shield]: https://img.shields.io/badge/i386-yes-green.svg
-[issue]: https://github.com/home-assistant/addons/issues
-[reddit]: https://reddit.com/r/homeassistant
-[repository]: https://github.com/hassio-addons/repository
+[issue]: https://github.com/muthur-command/addons/issues
+[reddit]: https://reddit.com/r/muthurcommand
+[repository]: https://github.com/mcos-addons/repository

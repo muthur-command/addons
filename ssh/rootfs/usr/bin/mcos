@@ -1,0 +1,4 @@
+#!/usr/bin/env bashio
+# vim: ft=bash
+bashio::log.yellow "The legacy supervisor CLI alias is deprecated, please use 'mc' instead!"
+mc "$@"

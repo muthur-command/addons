@@ -3,7 +3,7 @@ version: 2.7.2
 slug: mariadb
 name: MariaDB
 description: A SQL database server
-url: https://github.com/home-assistant/addons/tree/master/mariadb
+url: https://github.com/muthur-command/addons/tree/mc/mariadb
 arch:
   - armhf
   - armv7
@@ -12,17 +12,17 @@ arch:
   - i386
 backup_post: unlock-tables-for-backup
 backup_pre: lock-tables-for-backup
-image: homeassistant/{arch}-addon-mariadb
+image: muthur-command/{arch}-addon-mariadb
 init: false
 options:
   databases:
-    - homeassistant
+    - muthurcommand
   logins:
     - password: null
-      username: homeassistant
+      username: muthurcommand
   rights:
-    - database: homeassistant
-      username: homeassistant
+    - database: muthurcommand
+      username: muthurcommand
 ports:
   3306/tcp: null
 schema:

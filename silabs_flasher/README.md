@@ -1,4 +1,4 @@
-# Home Assistant App: Silicon Labs Flasher App
+# Muthur Command App: Silicon Labs Flasher App
 
 Silicon Labs Flasher app (formerly known as add-on) to flash Silicon Labs based radios.
 
@@ -18,8 +18,8 @@ Multiprotocol app.
 ## About
 
 This app allows you to flash firmwares using the Gecko Bootloader file format
-(gbl). By default it comes with firmware for Home Assistant SkyConnect/ZBT-1 and
-Home Assistant Yellow to flash Zigbee.
+(gbl). By default it comes with firmware for Muthur Command SkyConnect/ZBT-1 and
+Muthur Command Yellow to flash Zigbee.
 
 [aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
 [amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg

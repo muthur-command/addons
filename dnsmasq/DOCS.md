@@ -1,10 +1,10 @@
-# Home Assistant App: Dnsmasq
+# Muthur Command App: Dnsmasq
 
 ## Installation
 
 Follow these steps to get the app (formerly known as add-on) installed on your system:
 
-1. In Home Assistant, go to **Settings** > **Apps** > **Install app**.
+1. In Muthur Command, go to **Settings** > **Apps** > **Install app**.
 2. Find the "Dnsmasq" app and click it.
 3. Click on the "INSTALL" button.
 
@@ -133,14 +133,14 @@ Got questions?
 
 You have several options to get them answered:
 
-- The [Home Assistant Discord Chat Server][discord].
-- The Home Assistant [Community Forum][forum].
-- Join the [Reddit subreddit][reddit] in [/r/homeassistant][reddit]
+- The [Muthur Command Discord Chat Server][discord].
+- The Muthur Command [Community Forum][forum].
+- Join the [Reddit subreddit][reddit] in [/r/muthurcommand][reddit]
 
 In case you've found a bug, please [open an issue on our GitHub][issue].
 
-[discord]: https://www.home-assistant.io/join-chat
-[forum]: https://community.home-assistant.io
-[issue]: https://github.com/home-assistant/addons/issues
-[reddit]: https://reddit.com/r/homeassistant
-[repository]: https://github.com/hassio-addons/repository
+[discord]: https://www.muthur-command.com
+[forum]: https://community.muthur-command.com
+[issue]: https://github.com/muthur-command/addons/issues
+[reddit]: https://reddit.com/r/muthurcommand
+[repository]: https://github.com/mcos-addons/repository

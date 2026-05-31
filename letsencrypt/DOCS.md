@@ -1,10 +1,10 @@
-# Home Assistant App: Letsencrypt
+# Muthur Command App: Letsencrypt
 
 ## Installation
 
 Follow these steps to get the app (formerly known as add-on) installed on your system:
 
-1. In Home Assistant, go to **Settings** > **Apps** > **Install app**.
+1. In Muthur Command, go to **Settings** > **Apps** > **Install app**.
 2. Find the "letsencrypt" app and click it.
 3. Click on the "INSTALL" button.
 
@@ -13,7 +13,7 @@ Follow these steps to get the app (formerly known as add-on) installed on your s
 The Letsencrypt app can be configured via the app interface.
 The configuration via YAML is also possible, see the examples below.
 
-Navigate in your Home Assistant frontend to the apps overview page at
+Navigate in your Muthur Command frontend to the apps overview page at
 **Settings** > **Apps**, and pick the **Let's Encrypt** app. On the top,
 pick the **Configuration** page.
 
@@ -32,7 +32,7 @@ There are two options to obtain certificates.
 
 - Requires you to use one of the supported DNS providers (See "Supported DNS providers" below)
 - Allows to request wildcard certificates (*.domain.tld)
-- Doesn’t need you to open a port to your Home Assistant host on your router.
+- Doesn’t need you to open a port to your Muthur Command host on your router.
 
 ### DNS providers
 
@@ -209,7 +209,7 @@ By default, other apps are referring to the correct path of the certificates.
 You can in addition find the files via the **Samba** app within the "ssl" share.
 
 For example, to use the certificates provided by this app to enable TLS on
-Home Assistant in the default paths, add the following lines to Home
+Muthur Command in the default paths, add the following lines to Home
 Assistant's main configuration file, `configuration.yaml`:
 
 ```yaml
@@ -236,11 +236,11 @@ new certificates will be created.
 
 There are multiple ways how the app can be started to check/renew the
 certificates. One way to automate the certificate renewal it to configure a
-renewal via [Home Assistant automation][haauto], and then restarting this
+renewal via [Muthur Command automation][haauto], and then restarting this
 automation every night via the [Supervisor app restart action][supervisorrestart].
 
-[haauto]: https://www.home-assistant.io/docs/automation/editor/
-[supervisorrestart]: https://www.home-assistant.io/integrations/hassio/#action-hassioaddon_restart
+[haauto]: https://www.muthur-command.com/docs/automation/editor/
+[supervisorrestart]: https://www.muthur-command.com/docs
 
 In this example, the automation will run every day at the chosen time, checking
 if a renewal is due, and will request it if needed.
@@ -440,7 +440,7 @@ dns:
 ```
 
 Please copy your credentials file "azure.txt" into the "share" shared folder
-on the Home Assistant host before starting the service. One way is to use the
+on the Muthur Command host before starting the service. One way is to use the
 **Samba** app to make the folder available via network or SSH App. You
 can find information on the required file format in the [documentation][certbot-dns-azure-conf]
 for the Certbot Azure plugin.
@@ -866,7 +866,7 @@ To obtain the ACME DNS API Key and Secret, follow the instructions here:
     google_creds: google.json
   ```
 
-Please copy your credentials file "google.json" into the "share" shared folder on the Home Assistant host before starting the service.
+Please copy your credentials file "google.json" into the "share" shared folder on the Muthur Command host before starting the service.
 
 One way is to use the **Samba** app to make the folder available via network or SSH App.
 
@@ -1557,15 +1557,15 @@ Got questions?
 
 You have several options to get them answered:
 
-- The [Home Assistant Discord Chat Server][discord].
-- The Home Assistant [Community Forum][forum].
-- Join the [Reddit subreddit][reddit] in [/r/homeassistant][reddit]
+- The [Muthur Command Discord Chat Server][discord].
+- The Muthur Command [Community Forum][forum].
+- Join the [Reddit subreddit][reddit] in [/r/muthurcommand][reddit]
 - Check out certbots page [certbot].
 
 In case you've found a bug, please [open an issue on our GitHub][issue].
 
-[discord]: https://www.home-assistant.io/join-chat
-[forum]: https://community.home-assistant.io
-[issue]: https://github.com/home-assistant/addons/issues
+[discord]: https://www.muthur-command.com
+[forum]: https://community.muthur-command.com
+[issue]: https://github.com/muthur-command/addons/issues
 [certbot]: https://certbot.eff.org
-[reddit]: https://reddit.com/r/homeassistant
+[reddit]: https://reddit.com/r/muthurcommand

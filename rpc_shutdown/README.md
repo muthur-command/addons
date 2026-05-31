@@ -1,4 +1,4 @@
-# Home Assistant App: RPC Shutdown
+# Muthur Command App: RPC Shutdown
 
 Shutdown Windows machines remotely.
 
@@ -6,11 +6,11 @@ Shutdown Windows machines remotely.
 
 ## About
 
-Allows you to shut down Windows Computers with a service call from Home Assistant.
+Allows you to shut down Windows Computers with a service call from Muthur Command.
 
 [aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
 [amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
 [armhf-shield]: https://img.shields.io/badge/armhf-yes-green.svg
 [armv7-shield]: https://img.shields.io/badge/armv7-yes-green.svg
 [i386-shield]: https://img.shields.io/badge/i386-yes-green.svg
-[discord]: https://www.home-assistant.io/join-chat
+[discord]: https://www.muthur-command.com

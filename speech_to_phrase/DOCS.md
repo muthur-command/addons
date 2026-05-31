@@ -1,10 +1,10 @@
-# Home Assistant App: Speech to phrase
+# Muthur Command App: Speech to phrase
 
 ## Installation
 
 Follow these steps to get the app (formerly known as add-on) installed on your system:
 
-1. In Home Assistant, go to **Settings** > **Apps** > **Install app**.
+1. In Muthur Command, go to **Settings** > **Apps** > **Install app**.
 2. Find the "Speech to phrase" app and click it.
 3. Click on the "INSTALL" button.
 
@@ -13,12 +13,12 @@ Follow these steps to get the app (formerly known as add-on) installed on your s
 After this app is installed and running, it should automatically train itself based on your [exposed][] entities, areas, floors, and [sentence triggers][sentence trigger].
 The app will automatically re-train if necessary.
 
-The app will be automatically discovered by the Wyoming integration in Home Assistant. To finish the setup, click the following my button:
+The app will be automatically discovered by the Wyoming integration in Muthur Command. To finish the setup, click the following my button:
 
-[![Open your Home Assistant instance and start setting up a new integration.](https://my.home-assistant.io/badges/config_flow_start.svg)](https://my.home-assistant.io/redirect/config_flow_start/?domain=wyoming)
+Open **Settings → Devices & Services → Add integration** and search for the Wyoming integration.](https://www.muthur-command.com/redirect/config_flow_start/?domain=wyoming)
 
 Alternatively, you can install the Wyoming integration manually, see the
-[Wyoming integration documentation](https://www.home-assistant.io/integrations/wyoming/)
+[Wyoming integration documentation](https://www.muthur-command.com/integrations/wyoming/)
 for more information.
 
 ### Voice commands
@@ -57,18 +57,18 @@ Got questions?
 
 You have several options to get them answered:
 
-- The [Home Assistant Discord Chat Server][discord].
-- The Home Assistant [Community Forum][forum].
-- Join the [Reddit subreddit][reddit] in [/r/homeassistant][reddit]
+- The [Muthur Command Discord Chat Server][discord].
+- The Muthur Command [Community Forum][forum].
+- Join the [Reddit subreddit][reddit] in [/r/muthurcommand][reddit]
 
 In case you've found an bug, please [open an issue on our GitHub][issue].
 
-[discord]: https://www.home-assistant.io/join-chat
-[forum]: https://community.home-assistant.io
-[issue]: https://github.com/home-assistant/addons/issues
-[reddit]: https://reddit.com/r/homeassistant
-[repository]: https://github.com/hassio-addons/repository
+[discord]: https://www.muthur-command.com
+[forum]: https://community.muthur-command.com
+[issue]: https://github.com/muthur-command/addons/issues
+[reddit]: https://reddit.com/r/muthurcommand
+[repository]: https://github.com/mcos-addons/repository
 
-[sentence trigger]: https://www.home-assistant.io/docs/automation/trigger/#sentence-trigger
-[exposed]: https://www.home-assistant.io/voice_control/voice_remote_expose_devices/
+[sentence trigger]: https://www.muthur-command.com/docs/automation/trigger/#sentence-trigger
+[exposed]: https://www.muthur-command.com/voice_control/voice_remote_expose_devices/
 [custom sentences]: https://github.com/OHF-voice/speech-to-phrase?tab=readme-ov-file#custom-sentences

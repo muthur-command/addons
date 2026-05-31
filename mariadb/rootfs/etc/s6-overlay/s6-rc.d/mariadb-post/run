@@ -113,5 +113,5 @@ PAYLOAD=$(\
         username "service" \
         password "${SECRET}"
 )
-bashio::log.info "Sending service information to Home Assistant"
+bashio::log.info "Sending service information to Muthur Command"
 bashio::services.publish "mysql" "${PAYLOAD}"

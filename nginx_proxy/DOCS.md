@@ -1,19 +1,19 @@
-# Home Assistant App: NGINX Home Assistant SSL proxy
+# Muthur Command App: NGINX Muthur Command SSL proxy
 
 ## Installation
 
 Follow these steps to get the app installed on your system:
 
-1. In Home Assistant, go to **Settings** > **Apps** > **Install app**.
-2. Find the "NGINX Home Assistant SSL proxy" app and click it.
+1. In Muthur Command, go to **Settings** > **Apps** > **Install app**.
+2. Find the "NGINX Muthur Command SSL proxy" app and click it.
 3. Click on the "INSTALL" button.
 
 ## How to use
 
-The NGINX Proxy app is commonly used in conjunction with the [Duck DNS](https://github.com/home-assistant/addons/tree/master/duckdns) and/or the [Let's Encrypt](https://github.com/home-assistant/addons/tree/master/letsencrypt) app to set up secure remote access to your Home Assistant instance. The following instructions covers this scenario.
+The NGINX Proxy app is commonly used in conjunction with the [Duck DNS](https://github.com/muthur-command/addons/tree/mc/duckdns) and/or the [Let's Encrypt](https://github.com/muthur-command/addons/tree/mc/letsencrypt) app to set up secure remote access to your Muthur Command instance. The following instructions covers this scenario.
 
-1. The certificate to your registered domain should already be created via [Duck DNS](https://github.com/home-assistant/addons/tree/master/duckdns), [Let's Encrypt](https://github.com/home-assistant/addons/tree/master/letsencrypt) or another method. Make sure that the certificate files exist in the `/ssl` directory.
-2. You must add the following section to your [Home Assistant configuration.yaml](https://www.home-assistant.io/docs/configuration/). If the `http` section is using the `ssl_certificate` or `ssl_key` keys, enable the `use_ssl_backend` option.
+1. The certificate to your registered domain should already be created via [Duck DNS](https://github.com/muthur-command/addons/tree/mc/duckdns), [Let's Encrypt](https://github.com/muthur-command/addons/tree/mc/letsencrypt) or another method. Make sure that the certificate files exist in the `/ssl` directory.
+2. You must add the following section to your [Muthur Command configuration.yaml](https://www.muthur-command.com/docs). If the `http` section is using the `ssl_certificate` or `ssl_key` keys, enable the `use_ssl_backend` option.
 
    ```yaml
    http:
@@ -52,7 +52,7 @@ The server's fully qualified domain name to use for the proxy.
 
 ### Option: `certfile` (required)
 
-The certificate file to use in the `/ssl` directory. Keep filename as-is if you used default settings to create the certificate with the [Duck DNS](https://github.com/home-assistant/addons/tree/master/duckdns) app.
+The certificate file to use in the `/ssl` directory. Keep filename as-is if you used default settings to create the certificate with the [Duck DNS](https://github.com/muthur-command/addons/tree/mc/duckdns) app.
 
 ### Option: `keyfile` (required)
 
@@ -106,15 +106,15 @@ Got questions?
 
 You have several options to get them answered:
 
-- The [Home Assistant Discord Chat Server][discord].
-- The Home Assistant [Community Forum][forum].
-- Join the [Reddit subreddit][reddit] in [/r/homeassistant][reddit]
+- The [Muthur Command Discord Chat Server][discord].
+- The Muthur Command [Community Forum][forum].
+- Join the [Reddit subreddit][reddit] in [/r/muthurcommand][reddit]
 
 In case you've found a bug, please [open an issue on our GitHub][issue].
 
-[discord]: https://www.home-assistant.io/join-chat
-[forum]: https://community.home-assistant.io
+[discord]: https://www.muthur-command.com
+[forum]: https://community.muthur-command.com
 [hsts]: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security
-[issue]: https://github.com/home-assistant/addons/issues
-[reddit]: https://reddit.com/r/homeassistant
-[repository]: https://github.com/hassio-addons/repository
+[issue]: https://github.com/muthur-command/addons/issues
+[reddit]: https://reddit.com/r/muthurcommand
+[repository]: https://github.com/mcos-addons/repository

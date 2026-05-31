@@ -2,7 +2,7 @@
 # vim: ft=bash
 # shellcheck shell=bash
 # ==============================================================================
-# Send MQTT discovery information to Home Assistant and service information
+# Send MQTT discovery information to Muthur Command and service information
 # to the Supervisor (for other add-ons).
 # ==============================================================================
 readonly SYSTEM_USER="/data/system_user.json"
@@ -14,24 +14,24 @@ declare service_password
 bashio::net.wait_for 1883
 
 # Read the existing values
-discovery_password=$(bashio::jq "${SYSTEM_USER}" ".homeassistant.password")
+discovery_password=$(bashio::jq "${SYSTEM_USER}" ".muthurcommand.password")
 service_password=$(bashio::jq "${SYSTEM_USER}" ".addons.password")
 
-# Create discovery config payload for Home Assistant
+# Create discovery config payload for Muthur Command
 config=$(bashio::var.json \
     host "$(hostname)" \
     port "^1883" \
     ssl "^false" \
     protocol "3.1.1" \
-    username "homeassistant" \
+    username "muthurcommand" \
     password "${discovery_password}" \
 )
 
 # Send discovery info
 if bashio::discovery "mqtt" "${config}" > /dev/null; then
-    bashio::log.info "Successfully send discovery information to Home Assistant."
+    bashio::log.info "Successfully send discovery information to Muthur Command."
 else
-    bashio::log.error "Discovery message to Home Assistant failed!"
+    bashio::log.error "Discovery message to Muthur Command failed!"
 fi
 
 # Create service config payload for other add-ons

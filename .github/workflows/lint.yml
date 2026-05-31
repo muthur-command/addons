@@ -7,9 +7,9 @@ env:
 
 on:
   pull_request:
-    branches: ["master"]
+    branches: ["mc"]
   push:
-    branches: ["master"]
+    branches: ["mc"]
 
 jobs:
   hadolint:

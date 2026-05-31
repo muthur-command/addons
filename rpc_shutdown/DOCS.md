@@ -1,10 +1,10 @@
-# Home Assistant App: RPC Shutdown
+# Muthur Command App: RPC Shutdown
 
 ## Installation
 
 Follow these steps to get the app installed on your system:
 
-1. In Home Assistant, go to **Settings** > **Apps** > **Install app**.
+1. In Muthur Command, go to **Settings** > **Apps** > **Install app**.
 2. Find the "RPC Shutdown" app and click it.
 3. Click on the "INSTALL" button.
 
@@ -25,12 +25,12 @@ computers:
     address: 192.168.0.1
     credentials: user%password
     delay: 0
-    message: Home Assistant is shutting down this PC. This cannot be canceled. Please save your work!
+    message: Muthur Command is shutting down this PC. This cannot be canceled. Please save your work!
   - alias: test-pc-2
     address: 192.168.0.2
     credentials: user%password
     delay: 0
-    message: Home Assistant is shutting down this PC. This cannot be canceled. Please save your work!
+    message: Muthur Command is shutting down this PC. This cannot be canceled. Please save your work!
 ```
 
 ### Option: `computers` (required)
@@ -58,12 +58,12 @@ A delay (in seconds) before shutting down the computer. This gives a user that h
 
 Show a custom message on the screen of the computer that will be shutdown.
 
-## Home Assistant configuration
+## Muthur Command configuration
 
-Use the following inside Home Assistant action call to use it:
+Use the following inside Muthur Command action call to use it:
 
 ```yaml
-action: hassio.app_stdin
+action: mcos.app_stdin
 data:
   app: core_rpc_shutdown
   input: test-pc
@@ -71,7 +71,7 @@ data:
 
 Each line explained:
 
-`action: hassio.app_stdin`: Use hassio.app_stdin service to send data over STDIN to an app.
+`action: mcos.app_stdin`: Use mcos.app_stdin service to send data over STDIN to an app.
 `data.app: core_rpc_shutdown`: Tells the service to send the command to this app.
 `data.input: test-pc`: Alias name created for the computer in the app configuration, and shuts that one down.
 
@@ -81,13 +81,13 @@ Got questions?
 
 You have several options to get them answered:
 
-- The [Home Assistant Discord Chat Server][discord].
-- The Home Assistant [Community Forum][forum].
-- Join the [Reddit subreddit][reddit] in [/r/homeassistant][reddit]
+- The [Muthur Command Discord Chat Server][discord].
+- The Muthur Command [Community Forum][forum].
+- Join the [Reddit subreddit][reddit] in [/r/muthurcommand][reddit]
 
 In case you've found a bug, please [open an issue on our GitHub][issue].
 
-[forum]: https://community.home-assistant.io
-[issue]: https://github.com/home-assistant/addons/issues
-[reddit]: https://reddit.com/r/homeassistant
-[discord]: https://www.home-assistant.io/join-chat
+[forum]: https://community.muthur-command.com
+[issue]: https://github.com/muthur-command/addons/issues
+[reddit]: https://reddit.com/r/muthurcommand
+[discord]: https://www.muthur-command.com

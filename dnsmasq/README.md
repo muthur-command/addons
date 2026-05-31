@@ -1,4 +1,4 @@
-# Home Assistant App: Dnsmasq
+# Muthur Command App: Dnsmasq
 
 A simple DNS server.
 
@@ -7,7 +7,7 @@ A simple DNS server.
 ## About
 
 Setup and manage a Dnsmasq DNS server. This allows you to manipulate DNS
-requests. For example, you can have your Home Assistant domain resolve with
+requests. For example, you can have your Muthur Command domain resolve with
 an internal address inside your network.
 
 [aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg

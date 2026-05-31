@@ -1,4 +1,4 @@
-# Home Assistant App: CEC Scanner
+# Muthur Command App: CEC Scanner
 
 Scan & discover HDMI CEC devices and their addresses.
 

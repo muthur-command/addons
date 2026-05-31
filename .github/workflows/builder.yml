@@ -8,9 +8,9 @@ env:
 
 on:
   pull_request:
-    branches: ["master"]
+    branches: ["mc"]
   push:
-    branches: ["master"]
+    branches: ["mc"]
 
 jobs:
   init:
@@ -82,7 +82,7 @@ jobs:
 
       - name: Get information
         id: info
-        uses: home-assistant/actions/helpers/info@master
+        uses: muthur-command/actions/helpers/info@mc
         with:
           path: "./${{ matrix.addon }}"
 
@@ -111,7 +111,7 @@ jobs:
 
       - name: Build ${{ matrix.addon }} app
         if: steps.check.outputs.build_arch == 'true'
-        uses: home-assistant/builder@2026.02.1
+        uses: muthur-command/builder@2026.05.0
         with:
           image: ${{ matrix.arch }}
           args: |

@@ -21,7 +21,7 @@ jobs:
             // Check if user is an organization member
             try {
               await github.rest.orgs.checkMembershipForUser({
-                org: 'home-assistant',
+                org: 'muthur-command',
                 username: issueAuthor
               });
               console.log(`✅ ${issueAuthor} is an organization member`);
@@ -42,11 +42,11 @@ jobs:
                     `staff and authorized contributors.\n\n` +
                     `If you would like to:\n` +
                     `- Report a bug: Please use the ` +
-                    `[bug report form](https://github.com/home-assistant/` +
+                    `[bug report form](https://github.com/muthur-command/` +
                     `addons/issues/new?template=bug_report.yml)\n` +
                     `- Request a feature: Please submit to ` +
                     `[Feature Requests](` +
-                    `https://github.com/orgs/home-assistant/discussions)\n\n` +
+                    `https://github.com/muthur-command/addons/discussions)\n\n` +
                     `If you believe you should have access to create ` +
                     `Task issues, please contact the maintainers.`
             });

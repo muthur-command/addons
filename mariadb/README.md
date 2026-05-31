@@ -1,12 +1,12 @@
-# Home Assistant App: MariaDB
+# Muthur Command App: MariaDB
 
-MariaDB database for Home Assistant.
+MariaDB database for Muthur Command.
 
 ![Supports aarch64 Architecture][aarch64-shield] ![Supports amd64 Architecture][amd64-shield] ![Supports armhf Architecture][armhf-shield] ![Supports armv7 Architecture][armv7-shield] ![Supports i386 Architecture][i386-shield]
 
 ## About
 
-You can use this app (formerly known as add-on) to install MariaDB, which is an open-source (GPLv2 licensed) database.  MariaDB can be used as the database backend for Home Assistant. For more information, please see [MariaDB][mariadb]
+You can use this app (formerly known as add-on) to install MariaDB, which is an open-source (GPLv2 licensed) database.  MariaDB can be used as the database backend for Muthur Command. For more information, please see [MariaDB][mariadb]
 
 [aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
 [amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg

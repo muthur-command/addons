@@ -12,7 +12,7 @@
 
 ## 5.7.0
 
-- Use new location for accessing the Home Assistant configuration folder using `/homeassistant`
+- Use new location for accessing the Muthur Command configuration folder using `/muthurcommand`
 - Add access to the new public configuration folders of add-ons
 - Upgrade to Alpine 3.18
 - Remove unneeded pip configuration when building add-on
@@ -26,7 +26,7 @@
 
 ## 5.5.1
 
-- Fix Home Assistant wheels path
+- Fix Muthur Command wheels path
 
 ## 5.5.0
 
@@ -47,7 +47,7 @@
 ## 5.4.0
 
 - Add Generate UUID menu item
-- Harmonize Home Assistant term
+- Harmonize Muthur Command term
 - Rename Components to integrations
 - Remove images for libraries
 - Update jQuery to 3.6.0
@@ -56,7 +56,7 @@
 
 ## 5.3.3
 
-- Fix Home Assistant API endpoint
+- Fix Muthur Command API endpoint
 
 ## 5.3.2
 
@@ -162,7 +162,7 @@
 - Update Python to version 3.7
 - Update Configurator to version 0.3.5
 - Migrate Add-on to new Ingress
-- Pin Home Assistant requirements to 0.91.1
+- Pin Muthur Command requirements to 0.91.1
 
 ## 2.1
 

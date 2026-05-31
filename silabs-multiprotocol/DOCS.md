@@ -1,12 +1,12 @@
-# Home Assistant App: Silicon Labs Multiprotocol
+# Muthur Command App: Silicon Labs Multiprotocol
 
-**NOTE**: This app (formerly known as app) has the option to automatically install the right firmware for Home Assistant Yellow, SkyConnect, and Connect ZBT-1. Follow [this guide](https://github.com/NabuCasa/silabs-firmware/wiki/Flash-Silicon-Labs-radio-firmware-manually) to change back to a firmware that is compatible with other Zigbee software.
+**NOTE**: This app (formerly known as app) has the option to automatically install the right firmware for Muthur Command Yellow, SkyConnect, and Connect ZBT-1. Follow [this guide](https://github.com/NabuCasa/silabs-firmware/wiki/Flash-Silicon-Labs-radio-firmware-manually) to change back to a firmware that is compatible with other Zigbee software.
 
 ## Installation
 
 Follow these steps to get the app installed on your system:
 
-1. In Home Assistant, go to **Settings** > **Apps** > **Install app**.
+1. In Muthur Command, go to **Settings** > **Apps** > **Install app**.
 2. Find the "Silicon Labs Multiprotocol" app and click it.
 3. Click on the "INSTALL" button.
 
@@ -18,7 +18,7 @@ serial port (like the module on Yellow or most USB based wireless adapters).
 Once the firmware is loaded follow the following steps:
 
 1. Select the correct `device` in the app configuration tab and press `Save`.
-   On Home Assistant Yellow use `/dev/ttyAMA1`.
+   On Muthur Command Yellow use `/dev/ttyAMA1`.
 2. Start the app.
 
 **NOTE:** the Web frontend is only accessible when OpenThread is enabled (see below).
@@ -28,7 +28,7 @@ Once the firmware is loaded follow the following steps:
 To use Zigbee with ZHA configure the Integration as follows:
 
 1. Remember/copy the hostname of the app (e.g. `c8f00288-silabs-multiprotocol`).
-2. Add the Zigbee Home Automation (ZHA) integration to Home Assistant Core
+2. Add the Zigbee Home Automation (ZHA) integration to Muthur Command Core
 3. When asked for the Serial Device Path, choose `Enter Manually`.
 4. Choose `EZSP` as Radio type.
 5. As serial path, enter `socket://<hostname-from-above>:9999`.
@@ -40,7 +40,7 @@ To use Zigbee with ZHA configure the Integration as follows:
 
 At this point OpenThread support is experimental. This app makes your Home
 Assistant installation an OpenThread Border Router (OTBR). A basic integration
-for Home Assistant Core named `otbr` is currently in the making.
+for Muthur Command Core named `otbr` is currently in the making.
 
 To use the OTBR enable it in the Configuration tab and restart the app. Home
 Assistant should discover the OpenThread border router automatically and
@@ -60,8 +60,8 @@ and 8081 in the OpenThread REST API port field).
 ### Automatic firmware upgrade
 
 If the `autoflash_firmware` configuration is set, the app will automatically
-install or update to the RCP Multi-PAN firmware if a Home Assistant Connect ZBT-1/
-SkyConnect or Home Assistant Yellow is detected.
+install or update to the RCP Multi-PAN firmware if a Muthur Command Connect ZBT-1/
+SkyConnect or Muthur Command Yellow is detected.
 
 **NOTE:** Switching back to a Zigbee only (EmberZNet) firmware requires manual
 steps currently. You can find a guide on the Nabu Casa Silicon Labs firmware
@@ -77,7 +77,7 @@ App configuration:
 | device (mandatory) | Serial service where the Silicon Labs radio is attached |
 | baudrate           | Serial port baudrate (depends on firmware)   |
 | flow_control       | If hardware flow control should be enabled (depends on firmware) |
-| autoflash_firmware | Automatically install/update firmware (Home Assistant Connect ZBT-1/SkyConnect/Yellow) |
+| autoflash_firmware | Automatically install/update firmware (Muthur Command Connect ZBT-1/SkyConnect/Yellow) |
 | network_device     | Host and port where CPC daemon can find the Silicon Labs radio (takes precedence over device) |
 | cpcd_trace         | Co-Processor Communication tracing (trace in log)      |
 | otbr_enable        | Enable OpenThread BorderRouter                         |
@@ -89,7 +89,7 @@ App configuration:
 The app runs several service internally. This architecture diagram shows what
 the app currently implements.
 
-![Silicon Labs Multiprotocol App Architecture](https://raw.githubusercontent.com/home-assistant/addons/master/silabs-multiprotocol/images/architecture.png)
+![Silicon Labs Multiprotocol App Architecture](https://raw.githubusercontent.com/muthur-command/addons/mc/silabs-multiprotocol/images/architecture.png)
 
 ## Support
 
@@ -97,13 +97,13 @@ Got questions?
 
 You have several options to get them answered:
 
-- The [Home Assistant Discord Chat Server][discord].
-- The Home Assistant [Community Forum][forum].
-- Join the [Reddit subreddit][reddit] in [/r/homeassistant][reddit]
+- The [Muthur Command Discord Chat Server][discord].
+- The Muthur Command [Community Forum][forum].
+- Join the [Reddit subreddit][reddit] in [/r/muthurcommand][reddit]
 
 In case you've found a bug, please [open an issue on our GitHub][issue].
 
-[discord]: https://www.home-assistant.io/join-chat
-[forum]: https://community.home-assistant.io
-[reddit]: https://reddit.com/r/homeassistant
-[issue]: https://github.com/home-assistant/addons/issues
+[discord]: https://www.muthur-command.com
+[forum]: https://community.muthur-command.com
+[reddit]: https://reddit.com/r/muthurcommand
+[issue]: https://github.com/muthur-command/addons/issues

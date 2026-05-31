@@ -1,6 +1,6 @@
-# Home Assistant App: VLC
+# Muthur Command App: VLC
 
-Allow Home Assistant to use your local device as Media Player.
+Allow Muthur Command to use your local device as Media Player.
 
 ![Supports aarch64 Architecture][aarch64-shield] ![Supports amd64 Architecture][amd64-shield] ![Supports armhf Architecture][armhf-shield] ![Supports armv7 Architecture][armv7-shield] ![Supports i386 Architecture][i386-shield]
 

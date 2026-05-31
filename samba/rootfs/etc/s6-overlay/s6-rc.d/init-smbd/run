@@ -18,11 +18,11 @@ fi
 
 bashio::config.require "enabled_shares" "Samba is a tool for sharing folders. Starting it without sharing any folders defeats the purpose."
 
-# Read hostname from API or setting default "hassio"
+# Read hostname from API or setting default "mcos"
 HOSTNAME=$(bashio::info.hostname)
 if bashio::var.is_empty "${HOSTNAME}"; then
     bashio::log.warning "Can't read hostname, using default."
-    HOSTNAME="hassio"
+    HOSTNAME="mcos"
 fi
 bashio::log.info "Hostname: ${HOSTNAME}"
 

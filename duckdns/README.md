@@ -1,4 +1,4 @@
-# Home Assistant App: DuckDNS
+# Muthur Command App: DuckDNS
 
 Automatically update your Duck DNS IP address with integrated HTTPS support via Let's Encrypt.
 

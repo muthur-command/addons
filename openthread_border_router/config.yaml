@@ -4,13 +4,13 @@ slug: openthread_border_router
 name: OpenThread Border Router
 description: OpenThread Border Router add-on
 url: >-
-  https://github.com/home-assistant/addons/tree/master/openthread_border_router
+  https://github.com/muthur-command/addons/tree/mc/openthread_border_router
 arch:
   - aarch64
   - amd64
-homeassistant: 2025.7.0
+muthurcommand: 2025.7.0
 gpio: true
-hassio_api: true
+mcos_api: true
 discovery:
   - otbr
 # IPC is only used within the Add-on
@@ -22,7 +22,7 @@ privileged:
   - NET_ADMIN
 devices:
   - /dev/net/tun
-image: homeassistant/{arch}-addon-otbr
+image: muthur-command/{arch}-addon-otbr
 init: false
 options:
   device: null

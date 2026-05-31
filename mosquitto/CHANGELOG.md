@@ -17,7 +17,7 @@
 
 ## 6.4.1
 
-- Increase default max_queued_messages to 8192 to fix dropped messages during Home Assistant startup
+- Increase default max_queued_messages to 8192 to fix dropped messages during Muthur Command startup
 
 ## 6.4.0
 
@@ -64,7 +64,7 @@ config we would advise reviewing [their changelog](https://mosquitto.org/ChangeL
 
 ## 6.0.2
 
-- Mention homeassistant and addon users in ACL doc
+- Mention muthurcommand and addon users in ACL doc
 
 ## 6.0.1
 
@@ -73,7 +73,7 @@ config we would advise reviewing [their changelog](https://mosquitto.org/ChangeL
 ## 6.0.0
 
 - Support for anonymous logins has been removed
-- Replaced Home Assistant authentication handling
+- Replaced Muthur Command authentication handling
 - Merged local account handling with authentication plugin
 - Add watchdog endpoint for health monitoring
 - Updated mosquitto to 1.6.12

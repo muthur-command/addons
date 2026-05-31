@@ -2,7 +2,7 @@
 
 ## 10.1.0
 
-- Update Home Assistant CLI to 5.0.0
+- Update Muthur Command CLI to 5.0.0
 - Update base image to 3.23-2026.03.1
 
 ## 10.0.2
@@ -16,17 +16,17 @@
 ## 10.0.0
 
 - Upgrade to Alpine 3.23
-- Upgrade Home Assistant CLI to 4.46.0
+- Upgrade Muthur Command CLI to 4.46.0
 - Use ttyd from Alpine package repository
 
 ## 9.22.0
 
-- Upgrade Home Assistant CLI to 4.45.0
+- Upgrade Muthur Command CLI to 4.45.0
 
 ## 9.21.0
 
 - Remove support for armhf, armv7, and i386 architectures
-- Upgrade Home Assistant CLI to 4.44.0
+- Upgrade Muthur Command CLI to 4.44.0
 
 ## 9.20.1
 
@@ -34,7 +34,7 @@
 
 ## 9.20.0
 
-- Upgrade Home Assistant CLI to 4.41.0
+- Upgrade Muthur Command CLI to 4.41.0
 - Upgrade to Alpine Linux 3.22
 - Upgrade libwebsockets to 4.4.1
 
@@ -44,11 +44,11 @@
 
 ## 9.18.0
 
-- Upgrade Home Assistant CLI to 4.39.0
+- Upgrade Muthur Command CLI to 4.39.0
 
 ## 9.17.0
 
-- Upgrade Home Assistant CLI to 4.38.0
+- Upgrade Muthur Command CLI to 4.38.0
 - Upgrade libwebsockets to 4.3.5
 
 ## 9.16.0
@@ -57,11 +57,11 @@
 
 ## 9.15.0
 
-- Upgrade Home Assistant CLI to 4.36.0
+- Upgrade Muthur Command CLI to 4.36.0
 
 ## 9.14.0
 
-- Upgrade Home Assistant CLI to 4.34.0
+- Upgrade Muthur Command CLI to 4.34.0
 
 ## 9.13.0
 
@@ -74,16 +74,16 @@
 
 ## 9.11.0
 
-- Upgrade Home Assistant CLI to 4.32.0
+- Upgrade Muthur Command CLI to 4.32.0
 
 ## 9.10.0
 
-- Upgrade Home Assistant CLI to 4.31.0
+- Upgrade Muthur Command CLI to 4.31.0
 
 ## 9.9.0
 
 - Upgrade to Alpine Linux 3.19
-- Upgrade Home Assistant CLI to 4.29.0
+- Upgrade Muthur Command CLI to 4.29.0
 - Upgrade libwebsockets to 4.3.3
 - Upgrade ttyd to 1.7.4
 
@@ -93,17 +93,17 @@
 
 ## 9.8.0
 
-- Please note: the `/config` folder has been renamed to `/homeassistant`.
+- Please note: the `/config` folder has been renamed to `/muthurcommand`.
 - Add support for accessing public add-on configurations
 - Upgrade to Alpine 3.18
 
 ## 9.7.1
 
-- Upgrade Home Assistant CLI to 4.26.0
+- Upgrade Muthur Command CLI to 4.26.0
 
 ## 9.7.0
 
-- Upgrade Home Assistant CLI to 4.23.0
+- Upgrade Muthur Command CLI to 4.23.0
 - Upgrade to Alpine 3.17
 - Update ttyd to 1.7.3
 - Update libwebsockets to 4.3.2
@@ -111,12 +111,12 @@
 ## 9.6.2
 
 - Make SUPERVISOR_TOKEN available as an SSH environment variable,
-  making it possible to invoke the Home Assistant CLI
+  making it possible to invoke the Muthur Command CLI
   without an interactive bash session.
 
 ## 9.6.1
 
-- Upgrade Home Assistant CLI to 4.21.0
+- Upgrade Muthur Command CLI to 4.21.0
 
 ## 9.6.0
 
@@ -126,13 +126,13 @@ your RSA key does not work after update you will need to make a new key
 with a stronger algorithm or switch to an ECDSA or Ed25519 type key. For
 more information see [OpenSSH v8.8 release notes](https://www.openssh.com/releasenotes.html).
 
-- Upgrade Home Assistant CLI to 4.18.0
+- Upgrade Muthur Command CLI to 4.18.0
 - Upgrade to Alpine 3.16
 - Refactor out usage of fix-attrs for s6 v3
 
 ## 9.4.0
 
-- Upgrade Home Assistant CLI to 4.17.0
+- Upgrade Muthur Command CLI to 4.17.0
 - Enabled image signature
 
 ## 9.3.0
@@ -146,31 +146,31 @@ more information see [OpenSSH v8.8 release notes](https://www.openssh.com/releas
 
 ## 9.2.1
 
-- Upgrade Home Assistant CLI to 4.14.0
+- Upgrade Muthur Command CLI to 4.14.0
 
 ## 9.2.0
 
 - Upgrade to Alpine 3.14
 - Make Bash prompt more colorful
-- Upgrade Home Assistant CLI to 4.13.0
+- Upgrade Muthur Command CLI to 4.13.0
 
 ## 9.1.3
 
-- Upgrade Home Assistant CLI to 4.12.3
+- Upgrade Muthur Command CLI to 4.12.3
 
 ## 9.1.2
 
-- Upgrade Home Assistant CLI to 4.12.2
+- Upgrade Muthur Command CLI to 4.12.2
 
 ## 9.1.1
 
 - Use GitHub Container Registry for the base image
-- Upgrade Home Assistant CLI to 4.12.1
+- Upgrade Muthur Command CLI to 4.12.1
 - Upstream ttyd project now uses the main branch
 
 ## 9.1.0
 
-- Upgrade Home Assistant CLI to 4.11.0
+- Upgrade Muthur Command CLI to 4.11.0
 - Support APKs installation on startup
 
 ## 9.0.2
@@ -179,17 +179,17 @@ more information see [OpenSSH v8.8 release notes](https://www.openssh.com/releas
 
 ## 9.0.1
 
-- Upgrade Home Assistant CLI to 4.10.1
+- Upgrade Muthur Command CLI to 4.10.1
 
 ## 9.0.0
 
 - Upgrade Alpine Linux to 3.13
-- Update Home Assistant CLI to 4.10.0
+- Update Muthur Command CLI to 4.10.0
 - Use new HA banner on login
 
 ## 8.10.0
 
-- Update Home Assistant CLI to 4.9.0
+- Update Muthur Command CLI to 4.9.0
 
 ## 8.9.1
 
@@ -197,7 +197,7 @@ more information see [OpenSSH v8.8 release notes](https://www.openssh.com/releas
 
 ## 8.9.0
 
-- Update Home Assistant CLI to 4.4.1
+- Update Muthur Command CLI to 4.4.1
 - Add Bluetooth support
 
 ## 8.8.1
@@ -206,12 +206,12 @@ more information see [OpenSSH v8.8 release notes](https://www.openssh.com/releas
 
 ## 8.8.0
 
-- Update Home Assistant CLI to 4.4.1
+- Update Muthur Command CLI to 4.4.1
 - Wrap system shutdown/reboot to supervisor
 
 ## 8.7.0
 
-- Update Home Assistant CLI to 4.4.0
+- Update Muthur Command CLI to 4.4.0
 - Upgrade Alpine Linux to 3.12
 
 ## 8.6.0
@@ -220,15 +220,15 @@ more information see [OpenSSH v8.8 release notes](https://www.openssh.com/releas
 
 ## 8.5.4
 
-- Update Home Assistant CLI to 4.3.0
+- Update Muthur Command CLI to 4.3.0
 
 ## 8.5.3
 
-- Update Home Assistant CLI to 4.2.0
+- Update Muthur Command CLI to 4.2.0
 
 ## 8.5.2
 
-- Update Home Assistant CLI to 4.1.0
+- Update Muthur Command CLI to 4.1.0
 
 ## 8.5.1
 
@@ -247,8 +247,8 @@ more information see [OpenSSH v8.8 release notes](https://www.openssh.com/releas
 
 ## 8.3.0
 
-- Update Home Assistant CLI to 4.0.1
-- Add backward compatibility with the hassio command
+- Update Muthur Command CLI to 4.0.1
+- Add backward compatibility with the mcio command
 - Update Web terminal to ttyd 1.6.0 with Libwebsockets 3.2.2
 - Rename HASSIO_TOKEN to SUPERVISOR_TOKEN in shell profile
 

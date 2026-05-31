@@ -1,11 +1,11 @@
 > [!CAUTION]
 > Multiprotocol is no longer supported and will be removed in the near future!
-> [Disable multiprotocol support](https://connectzbt1.home-assistant.io/procedures/disable-multiprotocol/) by migrating your radio back to Zigbee or Thread firmware.
+> [Disable multiprotocol support](https://www.muthur-command.comprocedures/disable-multiprotocol/) by migrating your radio back to Zigbee or Thread firmware.
 
-# \[DEPRECATED\] Home Assistant App: SiliconLabs Zigbee/OpenThread Multiprotocol App
+# \[DEPRECATED\] Muthur Command App: SiliconLabs Zigbee/OpenThread Multiprotocol App
 
 Zigbee/OpenThread Multiprotocol container for Silicon Labs based radios such as
-Home Assistant Yellow, Home Assistant SkyConnect, and Home Assistant Connect ZBT-1.
+Muthur Command Yellow, Muthur Command SkyConnect, and Muthur Command Connect ZBT-1.
 
 ![Supports armv7 Architecture][armv7-shield]
 ![Supports aarch64 Architecture][aarch64-shield]

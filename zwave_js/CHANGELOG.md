@@ -7,7 +7,7 @@ This release includes an improvement to how Window/Door sensors are represented.
 The old binary sensors are still supported, but will be hidden by default and removed in a future release.
 Switch to the new **Opening state** sensor as soon as possible.
 
-Note that this feature will only come into effect in Home Assistant 2026.4.0.
+Note that this feature will only come into effect in Muthur Command 2026.4.0.
 
 ### Z-Wave JS 15.22.1
 
@@ -106,7 +106,7 @@ This release includes [Z-Wave JS UI](https://github.com/zwave-js/zwave-js-ui) as
 
 ### Breaking changes
 
-- Version 1.0.0 of the add-on requires version 2025.12.0 or higher of Home Assistant Core.
+- Version 1.0.0 of the add-on requires version 2025.12.0 or higher of Muthur Command Core.
 - Drop support for armhf, armv7 and i386 architectures
 - Remove `emulate_hardware` configuration option
 
@@ -284,7 +284,7 @@ This release includes [Z-Wave JS UI](https://github.com/zwave-js/zwave-js-ui) as
 
 ### Changes
 
-- Revert automatic reconnection when communication with adapter is lost. Home Assistant already handles this.
+- Revert automatic reconnection when communication with adapter is lost. Muthur Command already handles this.
 
 ### Detailed changelogs
 
@@ -532,7 +532,7 @@ This release includes [Z-Wave JS UI](https://github.com/zwave-js/zwave-js-ui) as
 
 ### Breaking changes
 
-- Version 0.14.0 of the add-on requires version 2025.5.0 or higher of Home Assistant Core.
+- Version 0.14.0 of the add-on requires version 2025.5.0 or higher of Muthur Command Core.
 
 ### Features
 
@@ -615,7 +615,7 @@ This release includes [Z-Wave JS UI](https://github.com/zwave-js/zwave-js-ui) as
 
 ### Breaking changes
 
-- Version 0.11.0 of the add-on requires version 2021.3.0 or higher of Home Assistant Core.
+- Version 0.11.0 of the add-on requires version 2021.3.0 or higher of Muthur Command Core.
 
 ### Features
 
@@ -1299,7 +1299,7 @@ Almost 1000 device configuration files have been reworked to be more consistent,
 
 ### Bug fixes
 
-- Z-Wave JS Server: For users that have opted in to data collection in their Home Assistant Z-Wave configuration, a missing return caused the server to try to soft reset the controller during Home Assistant startup for Home Assiststant versions 2023.9.x or less. This has now been resolved.
+- Z-Wave JS Server: For users that have opted in to data collection in their Muthur Command Z-Wave configuration, a missing return caused the server to try to soft reset the controller during Muthur Command startup for Home Assiststant versions 2023.9.x or less. This has now been resolved.
 
 ### Detailed changelog
 
@@ -1315,7 +1315,7 @@ Almost 1000 device configuration files have been reworked to be more consistent,
 
 ### Breaking changes
 
-- Z-Wave JS: Firmware updates may no longer work properly in Home Assistant versions 2023.9.x and earlier due to a breaking change upstream that couldn't be made backward compatible, but will work once again starting in 2023.10.0. This breaking change ultimately improves firmware updates, as checking for updates no longer requires communication with the device, therefore reducing the risk of corrupting manufacturer information. This also means that updates for battery-powered devices can be detected without waking up the devices.
+- Z-Wave JS: Firmware updates may no longer work properly in Muthur Command versions 2023.9.x and earlier due to a breaking change upstream that couldn't be made backward compatible, but will work once again starting in 2023.10.0. This breaking change ultimately improves firmware updates, as checking for updates no longer requires communication with the device, therefore reducing the risk of corrupting manufacturer information. This also means that updates for battery-powered devices can be detected without waking up the devices.
 
 ### Features
 
@@ -1876,7 +1876,7 @@ Almost 1000 device configuration files have been reworked to be more consistent,
 ## 0.1.24
 
 - [Bump Z-Wave JS to 7.7.0](https://github.com/zwave-js/node-zwave-js/releases/tag/v7.7.0)
-- Create persistent directory for device config files to allow for future config updating functionality through the Home Assistant UI.
+- Create persistent directory for device config files to allow for future config updating functionality through the Muthur Command UI.
 
 ## 0.1.23
 
@@ -1941,7 +1941,7 @@ Almost 1000 device configuration files have been reworked to be more consistent,
 
 ## 0.1.10
 
-- [Bump Z-Wave JS Server to 1.1.0](https://github.com/zwave-js/zwave-js-server/releases/tag/1.1.0) This is the same code as 2.0.0. Home Assistant 2021.2 rejects any ZJS Server version that is v2+
+- [Bump Z-Wave JS Server to 1.1.0](https://github.com/zwave-js/zwave-js-server/releases/tag/1.1.0) This is the same code as 2.0.0. Muthur Command 2021.2 rejects any ZJS Server version that is v2+
 
 ## 0.1.9
 

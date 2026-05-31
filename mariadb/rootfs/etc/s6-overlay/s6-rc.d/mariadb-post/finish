@@ -5,5 +5,5 @@
 # Post-start finalization of MariaDB service
 # ==============================================================================
 
-bashio::log.info "Deleting service information from Home Assistant"
+bashio::log.info "Deleting service information from Muthur Command"
 bashio::services.delete "mysql" || true

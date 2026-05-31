@@ -1,10 +1,10 @@
-# Home Assistant App: Mosquitto broker
+# Muthur Command App: Mosquitto broker
 
 ## Installation
 
 Follow these steps to get the app (formerly known as add-on) installed on your system:
 
-1. In Home Assistant, go to **Settings** > **Apps** > **Install app**.
+1. In Muthur Command, go to **Settings** > **Apps** > **Install app**.
 2. Find the "Mosquitto broker" app and click it.
 3. Click on the "INSTALL" button.
 
@@ -16,19 +16,19 @@ The app has a couple of options available. To get the app running:
 2. Have some patience and wait a couple of minutes.
 3. Check the app log output to see the result.
 
-Create a new user for MQTT via your Home Assistant's frontend **Settings** > **People** > **Users** , (i.e. not on Mosquitto's **Configuration** tab).
+Create a new user for MQTT via your Muthur Command's frontend **Settings** > **People** > **Users** , (i.e. not on Mosquitto's **Configuration** tab).
 Notes:
 
-1. This name cannot be `homeassistant` or `addons`, those are reserved usernames.
-2. If you do not see the option to create a new user, ensure that **Advanced Mode** is enabled in your Home Assistant profile.
+1. This name cannot be `muthurcommand` or `addons`, those are reserved usernames.
+2. If you do not see the option to create a new user, ensure that **Advanced Mode** is enabled in your Muthur Command profile.
 
 To use the Mosquitto as a broker, go to the integration page and install the configuration with one click:
 
-1. Navigate in your Home Assistant frontend to **Settings** > **Devices & Services** > **Integrations**.
+1. Navigate in your Muthur Command frontend to **Settings** > **Devices & Services** > **Integrations**.
 2. MQTT should appear as a discovered integration at the top of the page
 3. Select it and check the box to enable MQTT discovery if desired, and hit submit.
 
-If you have old MQTT settings available, remove this old integration and restart Home Assistant to see the new one.
+If you have old MQTT settings available, remove this old integration and restart Muthur Command to see the new one.
 
 ## Configuration
 
@@ -46,7 +46,7 @@ require_certificate: false
 
 ### Option: `logins` (optional)
 
-A list of local users that will be created with username and password. You don’t need to do this because you can use Home Assistant users too, without any configuration. If a local user is specifically desired:
+A list of local users that will be created with username and password. You don’t need to do this because you can use Muthur Command users too, without any configuration. If a local user is specifically desired:
 
 ```yaml
 logins:
@@ -82,11 +82,11 @@ The folder to read the additional configuration files (`*.conf`) from.
 
 ### Option: `cafile` (optional)
 
-A file containing a root certificate. Place this file in the Home Assistant `ssl` folder.
+A file containing a root certificate. Place this file in the Muthur Command `ssl` folder.
 
 ### Option: `certfile`
 
-A file containing a certificate, including its chain. Place this file in the Home Assistant `ssl` folder.
+A file containing a certificate, including its chain. Place this file in the Muthur Command `ssl` folder.
 
 **Note on `certfile` and `keyfile`**
 - If `certfile` and `keyfile` are _not_ provided
@@ -98,7 +98,7 @@ A file containing a certificate, including its chain. Place this file in the Hom
 
 ### Option: `keyfile`
 
-A file containing the private key. Place this file in the Home Assistant `ssl` folder.
+A file containing the private key. Place this file in the Muthur Command `ssl` folder.
 
 **Note on `certfile` and `keyfile`**
 - If `certfile` and `keyfile` are _not_ provided
@@ -123,9 +123,9 @@ If set to `true`:
 
 If set to `true` turns on debug logging for mosquitto and its auth plugin. This an help when tracking down an issue however running with this long term is not recommended as sensitive information will be logged.
 
-## Home Assistant user management
+## Muthur Command user management
 
-This app is attached to the Home Assistant user system, so MQTT clients can make use of these credentials. Local users may also still be set independently within the configuration options for the app. For the internal Home Assistant ecosystem, we register `homeassistant` and `addons`, so these may not be used as user names.
+This app is attached to the Muthur Command user system, so MQTT clients can make use of these credentials. Local users may also still be set independently within the configuration options for the app. For the internal Muthur Command ecosystem, we register `muthurcommand` and `addons`, so these may not be used as user names.
 
 ## Disable listening on insecure (1883/1884) ports
 
@@ -142,7 +142,7 @@ See the following links for more information:
 
 Add the following configuration to enable **unrestricted** access to all topics for `[YOUR_MQTT_USER]`.
 
-**Note:** Home Assistant expects the users `homeassistant` and `addons` to have unrestricted readwrite access to all topics. If you choose to enable ACLs, you should grant this access to these users as demonstrated below. Otherwise you will run into issues.
+**Note:** Muthur Command expects the users `muthurcommand` and `addons` to have unrestricted readwrite access to all topics. If you choose to enable ACLs, you should grant this access to these users as demonstrated below. Otherwise you will run into issues.
 
 1. Enable the customize flag
 
@@ -164,14 +164,14 @@ Add the following configuration to enable **unrestricted** access to all topics 
     user addons
     topic readwrite #
 
-    user homeassistant
+    user muthurcommand
     topic readwrite #
 
     user [YOUR_MQTT_USER]
     topic readwrite #
     ```
 
-The `/share` folder can be accessed via SMB, or on the host filesystem under `/usr/share/hassio/share`.
+The `/share` folder can be accessed via SMB, or on the host filesystem under `/usr/share/mcos/share`.
 
 ## Support
 
@@ -179,15 +179,15 @@ Got questions?
 
 You have several options to get them answered:
 
-- The [Home Assistant Discord Chat Server][discord].
-- The Home Assistant [Community Forum][forum].
-- Join the [Reddit subreddit][reddit] in [/r/homeassistant][reddit]
+- The [Muthur Command Discord Chat Server][discord].
+- The Muthur Command [Community Forum][forum].
+- Join the [Reddit subreddit][reddit] in [/r/muthurcommand][reddit]
 
 In case you've found a bug, please [open an issue on our GitHub][issue].
 
-[discord]: https://www.home-assistant.io/join-chat
-[forum]: https://community.home-assistant.io
-[issue]: https://github.com/home-assistant/addons/issues
-[reddit]: https://reddit.com/r/homeassistant
-[repository]: https://github.com/hassio-addons/repository
+[discord]: https://www.muthur-command.com
+[forum]: https://community.muthur-command.com
+[issue]: https://github.com/muthur-command/addons/issues
+[reddit]: https://reddit.com/r/muthurcommand
+[repository]: https://github.com/mcos-addons/repository
 [mosquitto]: https://mosquitto.org/

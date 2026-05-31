@@ -1,15 +1,13 @@
-# Home Assistant Apps: The official repository
+# Muthur Command Apps
 
-Apps (formerly known as add-ons) for Home Assistant allow you to extend the functionality
-around your Home Assistant setup. These apps can consist of an application
-that Home Assistant can integrate with (e.g., a [MQTT broker](/mosquitto/README.md) or [database server](/mariadb/README.md))
-or allow access to your Home Assistant configuration (e.g., via [Samba](/samba/README.md) or using
+Apps (formerly known as add-ons) for Muthur Command extend the functionality
+around your Muthur Command setup. These apps can consist of an application
+that Muthur Command can integrate with (e.g., a [MQTT broker](/mosquitto/README.md) or [database server](/mariadb/README.md))
+or allow access to your Muthur Command configuration (e.g., via [Samba](/samba/README.md) or using
 the [File Editor](/configurator/README.md)).
 
-Apps can be installed and configured via the Home Assistant frontend on
-systems that have installed Home Assistant.
-
-[![Home Assistant - A project from the Open Home Foundation](https://www.openhomefoundation.org/badges/home-assistant.png)](https://www.openhomefoundation.org/)
+Apps can be installed and configured via the Muthur Command frontend on
+systems that have Muthur Command installed.
 
 ## Apps provided by this repository
 
@@ -31,11 +29,11 @@ systems that have installed Home Assistant.
 
 - **[File editor](/configurator/README.md)**
 
-    Simple browser-based file editor for Home Assistant.
+    Simple browser-based file editor for Muthur Command.
 
 - **[Git pull](/git_pull/README.md)**
 
-    Load and update configuration files for Home Assistant from a Git repository.
+    Load and update configuration files for Muthur Command from a Git repository.
 
 - **[Let's Encrypt](/letsencrypt/README.md)**
 
@@ -43,13 +41,13 @@ systems that have installed Home Assistant.
 
 - **[MariaDB](/mariadb/README.md)**
 
-    MariaDB database for Home Assistant.
+    MariaDB database for Muthur Command.
 
 - **[Mosquitto broker](/mosquitto/README.md)**
 
     An Open Source MQTT broker.
 
-- **[NGINX Home Assistant SSL proxy](/nginx_proxy/README.md)**
+- **[NGINX Muthur Command SSL proxy](/nginx_proxy/README.md)**
 
     Sets up an SSL proxy with NGINX and redirects traffic from port 80 to 443.
 
@@ -59,15 +57,15 @@ systems that have installed Home Assistant.
 
 - **[Samba share](/samba/README.md)**
 
-    Share your configuration over the network using Windows file sharing.
+    Share your Muthur Command configuration over the network using Windows file sharing.
 
 - **[SSH server](/ssh/README.md)**
 
-    Allow logging in remotely to Home Assistant using SSH or just the web terminal with Ingress.
+    Allow logging in remotely to Muthur Command using SSH or just the web terminal with Ingress.
 
 - **[Z-Wave JS](/zwave_js/README.md)**
 
-    Allow Home Assistant to talk to a Z-Wave Network via a USB Controller.
+    Allow Muthur Command to talk to a Z-Wave Network via a USB Controller.
 
 ## Support
 
@@ -75,11 +73,8 @@ Got questions?
 
 You have several options to get them answered:
 
-- The [Home Assistant Discord Chat Server][discord].
-- The Home Assistant [Community Forum][forum].
-- Join the [Reddit subreddit][reddit] in [/r/homeassistant][reddit].
-
-In case you've found a bug, please [open an issue on our GitHub][issue].
+- Visit [muthur-command.com](https://www.muthur-command.com).
+- Open an issue on [GitHub][issue].
 
 ## Developing your own apps
 
@@ -88,9 +83,11 @@ repository can be a great source of inspiration. For more information
 about developing an app, please see our
 [documentation for developers][dev-docs].
 
-[discord]: https://www.home-assistant.io/join-chat
-[forum]: https://community.home-assistant.io
-[i386-shield]: https://img.shields.io/badge/i386-no-red.svg
-[issue]: https://github.com/home-assistant/addons/issues
-[reddit]: https://reddit.com/r/homeassistant
-[dev-docs]: https://developers.home-assistant.io/docs/add-ons/
+## Origin
+
+- **Upstream:** [home-assistant/addons](https://github.com/home-assistant/addons) — upstream source repository (ported to Muthur Command OS).
+- **In this repo:** **Muthur Command** keeps this copy for Muthur Command OS; apps and behavior may diverge from upstream over time.
+- **License:** Code inherited from upstream remains under its original licenses; see [`LICENSE`](./LICENSE).
+
+[issue]: https://github.com/muthur-command/addons/issues
+[dev-docs]: https://www.muthur-command.com/docs/docs/add-ons/

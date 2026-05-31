@@ -25,21 +25,21 @@
 ## 7.14.0
 
 - Update base image to Alpine 3.19
-- Update Home Assistant CLI to 4.31.0
+- Update Muthur Command CLI to 4.31.0
 
 ## 7.13.1
 
-- Update Home Assistant CLI to 4.12.2
+- Update Muthur Command CLI to 4.12.2
 
 ## 7.13.0
 
-- Update Home Assistant CLI to 4.12.1
+- Update Muthur Command CLI to 4.12.1
 - Upgrade base image to Alpine 3.13
 - Supress a shellcheck warning happening in CI
 
 ## 7.12.2
 
-- Update Home Assistant CLI to 4.11.0
+- Update Muthur Command CLI to 4.11.0
 
 ## 7.12.1
 
@@ -51,15 +51,15 @@
 
 ## 7.11.0
 
-- Update Home Assistant CLI to 4.2.0
+- Update Muthur Command CLI to 4.2.0
 
 ## 7.10.0
 
-- Update Home Assistant CLI to 4.1.0
+- Update Muthur Command CLI to 4.1.0
 
 ## 7.9.0
 
-- Update Home Assistant CLI to 4.0.1
+- Update Muthur Command CLI to 4.0.1
 
 ## 7.8.0
 
@@ -105,4 +105,4 @@
 
 ## 6.0.0
 
-- Allow to disable Home Assistant restart for specific file changes
+- Allow to disable Muthur Command restart for specific file changes

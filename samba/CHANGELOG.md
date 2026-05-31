@@ -56,19 +56,19 @@
 
 ## 12.1.0
 
-- Use the new Home Assistant folder for the `config` share
+- Use the new Muthur Command folder for the `config` share
 - Add support for accessing public add-on configurations
 
 ## 12.0.0
 
 - Temporary remove access to add-on config shares, until Supervisor 2023.11.2 has been rolled out stable
 - Revert `config` share name change to avoid user facing change
-- Adjust location of Home Assistant config to match latest dev/beta Supervisor
+- Adjust location of Muthur Command config to match latest dev/beta Supervisor
 - Migrate add-on layout to S6 Overlay
 
 ## 11.0.0
 
-- The `config` share has been renamed to `homeassistant` to match upstream changes.
+- The `config` share has been renamed to `muthurcommand` to match upstream changes.
 - Add support for accessing public add-on configurations
 - Update to Alpine 3.18
 - Adds HEALTCHECK support
@@ -109,7 +109,7 @@ systems do not have these restrictions.
 
 ## 9.5.1
 
-- Add `hassio_api` to add-on configuration
+- Add `mcos_api` to add-on configuration
 
 ## 9.5.0
 

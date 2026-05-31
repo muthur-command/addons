@@ -3,7 +3,7 @@
 # ==============================================================================
 # Setup persistent user settings
 # ==============================================================================
-readonly DIRECTORIES=(addon_configs addons backup homeassistant media share ssl)
+readonly DIRECTORIES=(addon_configs addons backup muthurcommand media share ssl)
 
 # Persist shell history by redirecting .bash_history to /data
 if ! bashio::fs.file_exists /data/.bash_history; then
@@ -11,13 +11,13 @@ if ! bashio::fs.file_exists /data/.bash_history; then
 fi
 chmod 600 /data/.bash_history
 
-# Make Home Assistant TOKEN available on the CLI
+# Make Muthur Command TOKEN available on the CLI
 mkdir -p /etc/profile.d
 bashio::var.json \
     supervisor_token "${SUPERVISOR_TOKEN}" \
     | tempio \
-        -template /usr/share/tempio/homeassistant.profile \
-        -out /etc/profile.d/homeassistant.sh
+        -template /usr/share/tempio/muthurcommand.profile \
+        -out /etc/profile.d/muthurcommand.sh
 
 
 # Persist shell profile by redirecting .bash_profile to /data
@@ -34,7 +34,7 @@ done
 
 # Some links to "old" locations, to match documentation,
 # backwards compatibility and musle memory
-ln -s "/homeassistant" "/config" \
+ln -s "/muthurcommand" "/config" \
     || bashio::log.warning "Failed linking common directory: /config"
-ln -s "/homeassistant" "${HOME}/config" \
+ln -s "/muthurcommand" "${HOME}/config" \
     || bashio::log.warning "Failed linking common directory: ${HOME}/config"

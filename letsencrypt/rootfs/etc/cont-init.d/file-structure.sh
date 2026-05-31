@@ -40,55 +40,55 @@ fi
 
 # Warn/fail on deprecated options
 if bashio::config.has_value 'dns.cloudns_sub_auth_user'; then
-    bashio::log.error "cloudns_sub_auth_user is not supported since Letsencrypt Home Assistant App v6.0.0."
+    bashio::log.error "cloudns_sub_auth_user is not supported since Letsencrypt Muthur Command App v6.0.0."
     exit 1
 fi
 
 
 if bashio::config.has_value 'dns.dreamhost_baseurl'; then
     if [ "$(bashio::config 'dns.dreamhost_baseurl')" != "https://api.dreamhost.com/" ]; then
-        bashio::log.error "dreamhost_baseurl is not supported since Letsencrypt Home Assistant App v6.0.0."
+        bashio::log.error "dreamhost_baseurl is not supported since Letsencrypt Muthur Command App v6.0.0."
         exit 1
     else
-        bashio::log.warning "dreamhost_baseurl is not required since Letsencrypt Home Assistant App v6.0.0, please remove it from your configuration."
+        bashio::log.warning "dreamhost_baseurl is not required since Letsencrypt Muthur Command App v6.0.0, please remove it from your configuration."
     fi
 fi
 
 if bashio::config.has_value 'dns.gandi_sharing_id'; then
-    bashio::log.error "gandi_sharing_id is not supported since Letsencrypt Home Assistant App v6.0.0."
+    bashio::log.error "gandi_sharing_id is not supported since Letsencrypt Muthur Command App v6.0.0."
     exit 1
 fi
 
 if bashio::config.has_value 'dns.ionos_endpoint'; then
     if [ "$(bashio::config 'dns.ionos_endpoint')" != "https://api.hosting.ionos.com" ]; then
-        bashio::log.error "ionos_endpoint is not supported since Letsencrypt Home Assistant App v6.0.0."
+        bashio::log.error "ionos_endpoint is not supported since Letsencrypt Muthur Command App v6.0.0."
         exit 1
     else
-        bashio::log.warning "ionos_endpoint is not required since Letsencrypt Home Assistant App v6.0.0, please remove it from your configuration."
+        bashio::log.warning "ionos_endpoint is not required since Letsencrypt Muthur Command App v6.0.0, please remove it from your configuration."
     fi
 fi
 
 if bashio::config.has_value 'dns.joker_domain'; then
-    bashio::log.error "joker_domain is not supported since Letsencrypt Home Assistant App v6.0.0."
+    bashio::log.error "joker_domain is not supported since Letsencrypt Muthur Command App v6.0.0."
     exit 1
 fi
 
 if bashio::config.has_value 'dns.linode_version'; then
     if [ "$(bashio::config 'dns.linode_version')" != "4" ]; then
-        bashio::log.error "Only Linode API v4 is supported since Letsencrypt Home Assistant App v6.0.0."
+        bashio::log.error "Only Linode API v4 is supported since Letsencrypt Muthur Command App v6.0.0."
         exit 1
     else
-        bashio::log.warning "linode_version is not required since Letsencrypt Home Assistant App v6.0.0, please remove it from your configuration."
+        bashio::log.warning "linode_version is not required since Letsencrypt Muthur Command App v6.0.0, please remove it from your configuration."
     fi
 fi
 
 if bashio::config.has_value 'dns.rfc2136_sign_query'; then
-    bashio::log.error "rfc2136_sign_query is not supported since Letsencrypt Home Assistant App v6.0.0."
+    bashio::log.error "rfc2136_sign_query is not supported since Letsencrypt Muthur Command App v6.0.0."
     exit 1
 fi
 
 if bashio::config.has_value 'dns.transip_global_key'; then
-    bashio::log.error "transip_global_key is not supported since Letsencrypt Home Assistant App v6.0.0."
+    bashio::log.error "transip_global_key is not supported since Letsencrypt Muthur Command App v6.0.0."
     exit 1
 fi
 

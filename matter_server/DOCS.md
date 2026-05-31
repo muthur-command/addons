@@ -1,13 +1,13 @@
-# Home Assistant App: Matter Server
+# Muthur Command App: Matter Server
 
 ## Installation
 
 Use the following steps to install this app.
 
-1. Click the Home Assistant My button below to open the app page on your
-   Home Assistant instance.
+1. Click the Muthur Command My button below to open the app page on your
+   Muthur Command instance.
 
-   [![Open this app in your Home Assistant instance.][addon-badge]][addon]
+   [![Open this app in your Muthur Command instance.][addon-badge]][addon]
 
 1. Click the "Install" button to install the app.
 
@@ -15,7 +15,7 @@ Use the following steps to install this app.
 
 Start the Matter Server app to make the WebSocket available to Home
 Assistant Core. Install the [Matter integration][matter_integration]
-in Home Assistant Core.
+in Muthur Command Core.
 
 ### Access WebSocket interface externally (advanced)
 
@@ -27,7 +27,7 @@ Matter Server WebSocket server port field.
 ## Server variants
 
 This app runs the Python Matter Server implementation from the
-[home-assistant-libs/python-matter-server][matter_server_repo] repository by default.
+[matter-js/python-matter-server][matter_server_repo] repository by default.
 
 Starting with version 8.2.0 and choosing the "Beta" flag (see below) the new OHF
 Matter(.js) Server is executed instead of the Python Matter Server.
@@ -70,17 +70,17 @@ Got questions?
 
 You have several options to get them answered:
 
-- The [Home Assistant Discord Chat Server][discord].
-- The Home Assistant [Community Forum][forum].
-- Join the [Reddit subreddit][reddit] in [/r/homeassistant][reddit]
+- The [Muthur Command Discord Chat Server][discord].
+- The Muthur Command [Community Forum][forum].
+- Join the [Reddit subreddit][reddit] in [/r/muthurcommand][reddit]
 
 In case you've found a bug, please [open an issue on our GitHub][issue].
 
-[addon]: https://my.home-assistant.io/redirect/supervisor_addon/?addon=core_matter_server
-[addon-badge]: https://my.home-assistant.io/badges/supervisor_addon.svg
-[discord]: https://www.home-assistant.io/join-chat
-[forum]: https://community.home-assistant.io
-[reddit]: https://reddit.com/r/homeassistant
-[issue]: https://github.com/home-assistant/addons/issues
-[matter_server_repo]: https://github.com/home-assistant-libs/python-matter-server
-[matter_integration]: https://www.home-assistant.io/integrations/matter/
+[addon]: https://www.muthur-command.com/redirect/supervisor_addon/?addon=core_matter_server
+[addon-badge]: https://www.muthur-command.com/badges/supervisor_addon.svg
+[discord]: https://www.muthur-command.com
+[forum]: https://community.muthur-command.com
+[reddit]: https://reddit.com/r/muthurcommand
+[issue]: https://github.com/muthur-command/addons/issues
+[matter_server_repo]: https://github.com/matter-js/python-matter-server
+[matter_integration]: https://www.muthur-command.com/integrations/matter/

@@ -32,7 +32,7 @@ export DISPLAY=":0"
 
 bashio::log.info "Starting VNC server (local - ${LOCAL_ONLY})..."
 tigervncserver \
-    -name "Home Assistant - deCONZ" \
+    -name "Muthur Command - deCONZ" \
     -geometry 1920x1080 \
     -depth 16 \
     -localhost ${LOCAL_ONLY} \
@@ -72,7 +72,7 @@ bashio::config.has_value 'dbg_error' \
 bashio::config.has_value 'dbg_http' \
     && DBG_HTTP="$(bashio::config 'dbg_http')" || DBG_HTTP=0
 
-# Send out discovery information to Home Assistant
+# Send out discovery information to Muthur Command
 ./discovery &
 
 # Start deCONZ

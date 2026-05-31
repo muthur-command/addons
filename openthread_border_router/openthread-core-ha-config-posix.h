@@ -31,7 +31,7 @@
 
 /**
  * This header file defines the OpenThread core configuration options for
- * Home Assistant with POSIX platform.
+ * Muthur Command with POSIX platform.
  */
 
 /**
@@ -71,6 +71,6 @@
  *
  * The name MUST have a length less than or equal to `OT_BORDER_AGENT_MESHCOP_SERVICE_BASE_NAME_MAX_LENGTH` (47 chars).
  */
-#define OPENTHREAD_CONFIG_BORDER_AGENT_MESHCOP_SERVICE_BASE_NAME "Home Assistant OpenThread Border Router "
+#define OPENTHREAD_CONFIG_BORDER_AGENT_MESHCOP_SERVICE_BASE_NAME "Muthur Command OpenThread Border Router "
 
 #endif /* OPENTHREAD_CORE_HA_CONFIG_POSIX_H_ */

@@ -10,7 +10,7 @@ body:
 
         If you have a feature or enhancement request, please use our [Feature Requests][fr].
 
-        [fr]: https://github.com/orgs/home-assistant/discussions
+        [fr]: https://github.com/muthur-command/addons/discussions
 
   - type: textarea
     validations:
@@ -30,11 +30,11 @@ body:
     attributes:
       label: What type of installation are you running?
       description: >
-        If you don't know, can be found in [Settings -> System -> Repairs -> System Information](https://my.home-assistant.io/redirect/system_health/).
+        If you don't know, can be found in [Settings -> System -> Repairs -> System Information](https://www.muthur-command.com/system_health/).
         It is listed as the `Installation Type` value.
       options:
-        - Home Assistant OS
-        - Home Assistant Supervised
+        - Muthur Command OS
+        - Supervised install
 
   - type: dropdown
     validations:
@@ -42,7 +42,7 @@ body:
     attributes:
       label: Which operating system are you running on?
       options:
-        - Home Assistant Operating System
+        - Muthur Command OS
         - Debian
         - Other (e.g., Raspbian/Raspberry Pi OS/Fedora)
 
@@ -63,7 +63,7 @@ body:
         - MariaDB
         - Matter Server
         - Mosquitto broker
-        - NGINX Home Assistant SSL proxy
+        - NGINX Muthur Command SSL proxy
         - OpenThread Border Router
         - Piper
         - RPC Shutdown
@@ -80,7 +80,7 @@ body:
       required: true
     attributes:
       label: What is the version of the app?
-      description: Can be found in [Settings > Apps](https://my.home-assistant.io/redirect/supervisor/) -> the app
+      description: Can be found in [Settings > Apps](https://www.muthur-command.com/supervisor/) -> the app
 
   - type: markdown
     attributes:
@@ -107,29 +107,29 @@ body:
     attributes:
       label: System Health information
       description: >
-        System Health information can be found in the top right menu in [Settings -> System -> Repairs](https://my.home-assistant.io/redirect/repairs/).
+        System Health information can be found in the top right menu in [Settings -> System -> Repairs](https://www.muthur-command.com/repairs/).
         Click the copy button at the bottom of the pop-up and paste it here.
 
-        [![Open your Home Assistant instance and show health information about your system.](https://my.home-assistant.io/badges/system_health.svg)](https://my.home-assistant.io/redirect/system_health/)
+        [![Open your Muthur Command instance and show health information about your system.](https://www.muthur-command.com/system_health.svg)](https://www.muthur-command.com/system_health/)
 
   - type: textarea
     attributes:
       label: Anything in the Supervisor logs that might be useful for us?
       description: >
-        Supervisor Logs can be found in [Settings -> System -> Logs](https://my.home-assistant.io/redirect/logs/)
+        Supervisor Logs can be found in [Settings -> System -> Logs](https://www.muthur-command.com/logs/)
         then choose `Supervisor` in the top right.
 
-        [![Open your Home Assistant instance and show your Supervisor system logs.](https://my.home-assistant.io/badges/supervisor_logs.svg)](https://my.home-assistant.io/redirect/supervisor_logs/)
+        [![Open your Muthur Command instance and show your Supervisor system logs.](https://www.muthur-command.com/supervisor_logs.svg)](https://www.muthur-command.com/supervisor_logs/)
       render: txt
 
   - type: textarea
     attributes:
       label: Anything in the app logs that might be useful for us?
       description: >
-        App Logs can be found in [Settings > System > Logs](https://my.home-assistant.io/redirect/logs/)
+        App Logs can be found in [Settings > System > Logs](https://www.muthur-command.com/logs/)
         then choose the app in the top right.
 
-        [![Open your Home Assistant instance and show your Home Assistant logs.](https://my.home-assistant.io/badges/logs.svg)](https://my.home-assistant.io/redirect/logs/)
+        [![Open your Muthur Command instance and show your Muthur Command logs.](https://www.muthur-command.com/logs.svg)](https://www.muthur-command.com/logs/)
       render: txt
 
   - type: textarea

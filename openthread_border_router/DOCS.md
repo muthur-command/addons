@@ -1,12 +1,12 @@
-# Home Assistant App: OpenThread Border Router
+# Muthur Command App: OpenThread Border Router
 
 ## Installation
 
 Follow these steps to get the app (formerly knowon as add-on) installed on your system:
 
-1. In Home Assistant, go to **Settings** > **Apps** > **Install app**.
+1. In Muthur Command, go to **Settings** > **Apps** > **Install app**.
 2. Select the top right menu and **Repository**.
-3. Add "https://github.com/home-assistant/addons" to add the **Home Assistant App Repository for Development** repository.
+3. Add "https://github.com/muthur-command/addons" to add the **Muthur Command App Repository for Development** repository.
 4. Find the **OpenThread Border Router** app and select it.
 5. Select the **Install** button.
 
@@ -14,14 +14,14 @@ Follow these steps to get the app (formerly knowon as add-on) installed on your 
 
 You will need a 802.15.4 capable radio supported by OpenThread flashed with OpenThread
 RCP firmware:
-- Home Assistant Yellow
-- Home Assistant SkyConnect/Connect ZBT-1
-- Home Assistant Connect ZBT-2
+- Muthur Command Yellow
+- Muthur Command SkyConnect/Connect ZBT-1
+- Muthur Command Connect ZBT-2
 
 These devices are all capable to run OpenThread and will be flashed with the correct
-firmware by Home Assistant Core.
+firmware by Muthur Command Core.
 
-If you are using Home Assistant Yellow, choose `/dev/ttyAMA1` as device.
+If you are using Muthur Command Yellow, choose `/dev/ttyAMA1` as device.
 
 ### Alternative radios
 
@@ -39,10 +39,10 @@ Once the firmware is loaded follow the following steps:
 
 ### OpenThread Border Router
 
-This app makes your Home Assistant installation an OpenThread Border Router
+This app makes your Muthur Command installation an OpenThread Border Router
 (OTBR). The border router can be used to comission Matter devices which connect
-through Thread. Home Assistant Core will automatically detect this app and
-create a new integration named "Open Thread Border Router". With Home Assistant
+through Thread. Muthur Command Core will automatically detect this app and
+create a new integration named "Open Thread Border Router". With Muthur Command
 Core 2023.3 and newer the OTBR will get configured automatically. The Thread
 integration allows to inspect the network configuration.
 
@@ -95,16 +95,16 @@ Got questions?
 
 You have several options to get them answered:
 
-- The [Home Assistant Discord Chat Server][discord].
-- The Home Assistant [Community Forum][forum].
-- Join the [Reddit subreddit][reddit] in [/r/homeassistant][reddit]
+- The [Muthur Command Discord Chat Server][discord].
+- The Muthur Command [Community Forum][forum].
+- Join the [Reddit subreddit][reddit] in [/r/muthurcommand][reddit]
 
 In case you've found a bug, please [open an issue on our GitHub][issue].
 
-[discord]: https://www.home-assistant.io/join-chat
-[forum]: https://community.home-assistant.io
-[reddit]: https://reddit.com/r/homeassistant
-[issue]: https://github.com/home-assistant/addons/issues
+[discord]: https://www.muthur-command.com
+[forum]: https://community.muthur-command.com
+[reddit]: https://reddit.com/r/muthurcommand
+[issue]: https://github.com/muthur-command/addons/issues
 [openthread-platforms]: https://openthread.io/platforms
 [nordic-nrf52840-dongle]: https://www.nordicsemi.com/Products/Development-hardware/nrf52840-dongle
 [nordic-nrf52840-dongle-install]: https://docs.nordicsemi.com/bundle/ncs-latest/page/nrf/protocols/thread/tools.html#configuring_a_radio_co-processor

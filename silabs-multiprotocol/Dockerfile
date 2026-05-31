@@ -237,7 +237,7 @@ RUN \
         -DOT_POSIX_CONFIG_RCP_VENDOR_INTERFACE=/usr/src/silabs-vendor-interface/cpc_interface.cpp \
         -DOT_CONFIG="openthread-core-silabs-posix-config.h" \
         -DOT_LINK_RAW=1 \
-        -DOTBR_VENDOR_NAME="Home Assistant" \
+        -DOTBR_VENDOR_NAME="Muthur Command" \
         -DOTBR_PRODUCT_NAME="Silicon Labs Multiprotocol" \
         -DOTBR_WEB=ON \
         -DOTBR_BORDER_ROUTING=ON \

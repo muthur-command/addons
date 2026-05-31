@@ -72,12 +72,12 @@
 
 ## 2.12.2
 
-- Update flasher script to work with Home Assistant Yellow with CM5
+- Update flasher script to work with Muthur Command Yellow with CM5
 
 ## 2.12.1
 
 - Fix possible race condition between otbr-agent-configure and otbr-agent-rest-discovery
-  services causing failed startup ([#3826](https://github.com/home-assistant/addons/issues/3826))
+  services causing failed startup ([#3826](https://github.com/muthur-command/addons/issues/3826))
 
 ## 2.12.0
 
@@ -126,7 +126,7 @@
 
 ## 2.5.1
 
-- Support Home Assistant Connect ZBT-1.
+- Support Muthur Command Connect ZBT-1.
 
 ## 2.5.0
 
@@ -166,7 +166,7 @@
 
 ## 2.4.2
 
-- Update firmare for Home Assistant SkyConnect and Yellow to the latest version
+- Update firmare for Muthur Command SkyConnect and Yellow to the latest version
   built from Gecko SDK v4.4.0.0.
 - Bump universal SiLabs flasher to 0.0.16
 
@@ -190,7 +190,7 @@
 
 ## 2.3.1
 
-- Update firmare for Home Assistant SkyConnect and Yellow to the latest version
+- Update firmare for Muthur Command SkyConnect and Yellow to the latest version
   built from Gecko SDK v4.3.1.0.
 
 ## 2.3.0
@@ -202,7 +202,7 @@
 
 ## 2.2.0
 
-- Update firmare for Home Assistant SkyConnect and Yellow to the latest version
+- Update firmare for Muthur Command SkyConnect and Yellow to the latest version
   built from Gecko SDK v4.3.0.0.
 
 ## 2.1.0
@@ -216,14 +216,14 @@
 
 ## 1.2.0
 
-- Fix firmware flashing on Home Assistant Yellow
+- Fix firmware flashing on Muthur Command Yellow
 - Bump universal SiLabs flasher to 0.0.12
 - Bump to OTBR POSIX version cbeaf817c5 (2023-03-29 11:06:31 -0700)
 - Don't start Web interface unnecessarily
 
 ## 1.1.0
 
-- Automatically flash firmware for Home Assistant SkyConnect and Yellow
+- Automatically flash firmware for Muthur Command SkyConnect and Yellow
 - Update serial port defaults to match latest firmware builds
 - Drop armv7 support
 
@@ -231,7 +231,7 @@
 
 - Bump to OTBR POSIX version d83fee189a (2023-02-28 08:48:56 -0800)
 - Remove Web UI via ingress (expose ports to use the Web UI, see documentation)
-- Change vendor name to "Home Assistant" and product name to Silicon Labs
+- Change vendor name to "Muthur Command" and product name to Silicon Labs
   Multiprotocol" (used in OTBR mDNS/DNS-SD announcments)
 - Set default baudrate 115200 correctly
 - Let the OTBR REST API listen on local interface only by default
