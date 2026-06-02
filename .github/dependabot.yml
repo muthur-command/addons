@@ -7,3 +7,10 @@ updates:
       interval: weekly
       time: "06:00"
     open-pull-requests-limit: 10
+    labels:
+      - dependencies
+      - github-actions
+    groups:
+      muthur-command-builder:
+        patterns:
+          - "muthur-command/builder*"
