@@ -111,7 +111,7 @@ jobs:
 
       - name: Build ${{ matrix.addon }} app
         if: steps.check.outputs.build_arch == 'true'
-        uses: muthur-command/builder@2026.05.0
+        uses: muthur-command/builder@2026.06.1
         with:
           image: ${{ matrix.arch }}
           args: |
