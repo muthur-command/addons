@@ -46,7 +46,8 @@ jobs:
                     `addons/issues/new?template=bug_report.yml)\n` +
                     `- Request a feature: Please submit to ` +
                     `[Feature Requests](` +
-                    `https://github.com/muthur-command/addons/discussions)\n\n` +
+                    `https://github.com/muthur-command/` +
+                    `addons/discussions)\n\n` +
                     `If you believe you should have access to create ` +
                     `Task issues, please contact the maintainers.`
             });

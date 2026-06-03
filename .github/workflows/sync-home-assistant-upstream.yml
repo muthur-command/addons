@@ -1,5 +1,8 @@
+---
 # Daily sync of the upstream default branch to this repo's upstream branch.
-# Note: schedule runs in UTC. For 00:00 Beijing time daily, use cron: '0 16 * * *' (UTC).
+# Note: schedule runs in UTC.
+# For 00:00 Beijing time daily, use cron: '0 16 * * *' (UTC).
+# yamllint disable rule:truthy
 name: Sync upstream
 
 on:
@@ -7,7 +10,8 @@ on:
   schedule:
     - cron: "0 0 * * *"
 
-# GITHUB_TOKEN cannot update .github/workflows/* on push; use GIT_TOKEN (PAT with workflow scope).
+# GITHUB_TOKEN cannot update .github/workflows/* on push.
+# Use GIT_TOKEN (PAT with repo + workflow scopes).
 permissions:
   contents: read
 
@@ -29,14 +33,17 @@ jobs:
       - name: Configure Git author for sync commits
         run: |
           git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.email \
+            "41898282+github-actions[bot]@users.noreply.github.com"
 
       - name: Verify GIT_TOKEN is configured
         env:
           GIT_TOKEN: ${{ secrets.GIT_TOKEN }}
         run: |
           if [ -z "$GIT_TOKEN" ]; then
-            echo "::error::Missing repository secret GIT_TOKEN. Add a PAT with repo + workflow scopes under Settings → Secrets → Actions."
+            echo "::error::Missing repository secret GIT_TOKEN."
+            echo "Add a PAT with repo + workflow scopes under"
+            echo "Settings → Secrets → Actions."
             exit 1
           fi
 
@@ -45,7 +52,8 @@ jobs:
           GIT_TOKEN: ${{ secrets.GIT_TOKEN }}
         run: |
           git config --global --unset-all credential.helper || true
-          git remote set-url origin "https://x-access-token:${GIT_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          git remote set-url origin \
+            "https://x-access-token:${GIT_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
 
       - name: Sync upstream branch from home-assistant/addons
         env:
