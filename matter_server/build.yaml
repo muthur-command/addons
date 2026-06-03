@@ -4,6 +4,6 @@ build_from:
   amd64: ghcr.io/matter-js/python-matter-server:8.1.2
 args:
   BASHIO_VERSION: 2026.06.1
-  TEMPIO_VERSION: 2024.11.2
+  TEMPIO_VERSION: 2026.06.3
   S6_OVERLAY_VERSION: 3.1.6.2
   NODE_VERSION: 22.21.1
