@@ -10,7 +10,7 @@ updates:
     labels:
       - dependencies
       - github-actions
-    groups:
-      muthur-command-builder:
-        patterns:
-          - "muthur-command/builder*"
+    # addons builder.yml uses home-assistant/builder (legacy addon CI), not
+    # muthur-command/builder/actions/* (multi-arch image builds).
+    ignore:
+      - dependency-name: "muthur-command/builder"
