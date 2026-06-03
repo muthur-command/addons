@@ -109,9 +109,11 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
+      # Legacy addon builder (builder.sh in Docker). muthur-command/builder >=2026.04.2
+      # only ships actions/build-image/* for container images, not a repo-root action.
       - name: Build ${{ matrix.addon }} app
         if: steps.check.outputs.build_arch == 'true'
-        uses: muthur-command/builder@2026.06.2
+        uses: home-assistant/builder@2026.02.1
         with:
           image: ${{ matrix.arch }}
           args: |
