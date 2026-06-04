@@ -9,6 +9,14 @@
       "datasourceTemplate": "github-releases",
       "depNameTemplate": "muthur-command/tempio",
       "versioningTemplate": "loose"
+    },
+    {
+      "customType": "regex",
+      "fileMatch": ["^ssh/build\\.yaml$"],
+      "matchStrings": ["CLI_VERSION: (?<currentValue>[^\\s]+)"],
+      "datasourceTemplate": "github-releases",
+      "depNameTemplate": "muthur-command/cli",
+      "versioningTemplate": "loose"
     }
   ],
   "packageRules": [
@@ -18,6 +26,14 @@
       "groupName": "tempio",
       "extractVersion": "^(?:mc_)?(?<version>.*)$",
       "commitMessageTopic": "tempio",
+      "commitMessageExtra": "to {{newVersion}}"
+    },
+    {
+      "matchManagers": ["custom.regex"],
+      "matchDepNames": ["muthur-command/cli"],
+      "groupName": "cli",
+      "extractVersion": "^(?:mc_)?(?<version>.*)$",
+      "commitMessageTopic": "cli",
       "commitMessageExtra": "to {{newVersion}}"
     }
   ],
