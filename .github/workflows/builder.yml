@@ -124,7 +124,7 @@ jobs:
       # only ships actions/build-image/* for container images, not a repo-root action.
       - name: Build ${{ matrix.addon }} app
         if: steps.check.outputs.build_arch == 'true'
-        uses: home-assistant/builder@2026.02.1
+        uses: home-assistant/builder@2026.06.0
         with:
           image: ${{ matrix.arch }}
           args: |
